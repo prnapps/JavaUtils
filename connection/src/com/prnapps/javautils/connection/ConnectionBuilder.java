@@ -38,6 +38,7 @@ public class ConnectionBuilder {
     private ContentType acceptType = ContentType.HTML;
     private List<String> cookies;
     private List<NameValuePair> customHeaders;
+    private String userAgent;
     private KeyManager[] keyManager = null;
     private TrustManager[] trustManager = null;
     private int redirects;
@@ -134,6 +135,11 @@ public class ConnectionBuilder {
         return this;
     }
 
+    public ConnectionBuilder setUserAgent(String userAgent) {
+        this.userAgent = userAgent;
+        return this;
+    }
+
     public ConnectionBuilder setTrustManager(TrustManager[] trustManager) {
         this.trustManager = trustManager;
         return this;
@@ -171,6 +177,7 @@ public class ConnectionBuilder {
 
         connection.setRequestMethod(method.toString());
         connection.setRequestProperty("Accept", acceptType.toString());
+        connection.setRequestProperty("User-Agent", userAgent);
 
         if(cookies != null) {
             for (String cookie : cookies) {

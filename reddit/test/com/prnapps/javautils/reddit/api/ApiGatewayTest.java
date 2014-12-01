@@ -37,6 +37,7 @@ public class ApiGatewayTest extends TestCase {
 
     public void testSaved() {
         try {
+            login = gateway.login(login);
             Saved saved = gateway.saved(login);
             assertNotNull(saved);
         } catch (ConnectionException | IOException e) {

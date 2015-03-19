@@ -30,6 +30,9 @@ public class StringUtils {
     }
 
     public String toTitleCase(String input) {
+        if(isNullOrEmpty(input)) {
+            return input;
+        }
         StringBuilder titleCase = new StringBuilder();
         boolean nextTitleCase = true;
         for (char c : input.toCharArray()) {
@@ -45,6 +48,9 @@ public class StringUtils {
     }
 
     public String findPattern(String body, String regex) {
+        if(isNullOrEmpty(body)) {
+            return null;
+        }
         Pattern pattern = Pattern.compile(regex);
         Matcher m = pattern.matcher(body);
         if(m.find()) {
@@ -54,6 +60,9 @@ public class StringUtils {
     }
 
     public List<String> findAllPatterns(String body, String regex) {
+        if(isNullOrEmpty(body)) {
+            return null;
+        }
         Pattern pattern = Pattern.compile(regex);
         Matcher m = pattern.matcher(body);
         List<String> list = new ArrayList<String>();

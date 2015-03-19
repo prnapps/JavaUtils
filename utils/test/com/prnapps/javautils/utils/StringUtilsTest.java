@@ -39,6 +39,8 @@ public class StringUtilsTest extends TestCase {
         String string1 = "test title case string";
         String string2 = "test title case string (another-one)";
         String string3 = "test title case string\\number-\\three";
+        assertNull(stringUtils.toTitleCase(null));
+        assertEquals(stringUtils.toTitleCase(""), "");
         assertEquals(stringUtils.toTitleCase(string1), "Test Title Case String");
         assertEquals(stringUtils.toTitleCase(string2), "Test Title Case String (Another-One)");
         assertEquals(stringUtils.toTitleCase(string3), "Test Title Case String\\Number-\\Three");
@@ -47,6 +49,7 @@ public class StringUtilsTest extends TestCase {
     public void testFindPattern() {
         String body = "1aa;dlkfj;kla2bsj;df";
         String pattern = "[0-9][a-z]";
+        assertNull(stringUtils.findPattern(null, pattern));
         assertEquals(stringUtils.findPattern(body, pattern), "1a");
     }
 
@@ -56,6 +59,7 @@ public class StringUtilsTest extends TestCase {
         List<String> list = new ArrayList<String>();
         list.add("1a");
         list.add("2b");
+        assertNull(stringUtils.findAllPatterns(null, pattern));
         assertEquals(stringUtils.findAllPatterns(body, pattern), list);
     }
 }

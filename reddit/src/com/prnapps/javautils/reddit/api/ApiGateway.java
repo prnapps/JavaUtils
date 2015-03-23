@@ -24,7 +24,7 @@ public class ApiGateway {
     private String userAgent;
 
     public Login login(String username, String password) throws IOException, ConnectionException {
-        IRequestManager loginRequestManager = new LoginRequestManager()
+        LoginRequestManager loginRequestManager = new LoginRequestManager()
                 .setUsername(username)
                 .setPassword(password);
         return getLogin(loginRequestManager);
@@ -36,13 +36,18 @@ public class ApiGateway {
         return getListing(savedRequestManager);
     }
 
-    public Login getLogin(IRequestManager loginRequestManager) throws ConnectionException, IOException {
+    public Listing subreddit(String subreddit, Login login) {
+        //TODO: get subreddit
+        return null;
+    }
+
+    public Login getLogin(LoginRequestManager loginRequestManager) throws ConnectionException, IOException {
         ConnectionResponse response = loginRequestManager.request(userAgent);
         Gson gson = new GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
                 .create();
         LoginContainer loginContainer = gson.fromJson(response.getResponseBody(), LoginContainer.class);
-        return loginContainer.getJson();
+        return loginContainer.getJson().setUsername(loginRequestManager.getUsername());
     }
 
     public Listing getListing(IRequestManager requestManager) throws ConnectionException, IOException {

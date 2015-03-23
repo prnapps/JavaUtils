@@ -37,6 +37,7 @@ public class ApiGatewayTest extends TestCase {
             ApiGateway apiGateway = new ApiGateway().setUserAgent(USER_AGENT);
             Listing saved = apiGateway.getListing(new MockRequestManagerFactory().getMockSavedRequestManager());
             Assert.assertNotNull(saved);
+            Assert.assertEquals(saved.getData().getModhash(), "ofo4hr3oie1f6be504d4e04d657a4ec0b81f80c7b83a6907b1");
         } catch (ConnectionException | IOException e) {
             e.printStackTrace();
             Assert.assertTrue(false);

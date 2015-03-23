@@ -1,59 +1,68 @@
 package com.prnapps.javautils.reddit.api;
 
-import java.io.IOException;
-
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.prnapps.javautils.connection.*;
-import com.prnapps.javautils.reddit.domain.Errors;
-import com.prnapps.javautils.reddit.domain.Error;
-import com.prnapps.javautils.reddit.domain.Login;
-import com.prnapps.javautils.reddit.domain.listing.Saved;
-import com.prnapps.javautils.reddit.domain.thing.Comment;
-import com.prnapps.javautils.reddit.domain.thing.Link;
-import com.prnapps.javautils.reddit.domain.thing.Media;
+import com.prnapps.javautils.connection.ConnectionException;
+import com.prnapps.javautils.connection.ConnectionResponse;
+import com.prnapps.javautils.reddit.domain.listing.Listing;
+import com.prnapps.javautils.reddit.domain.login.LoginContainer;
+import com.prnapps.javautils.reddit.domain.login.Login;
+import com.prnapps.javautils.reddit.domain.other.FullName;
+import com.prnapps.javautils.reddit.domain.thing.Thing;
+import com.prnapps.javautils.utils.gson.DateSerializerDeserializer;
+import com.prnapps.javautils.utils.gson.URLSerializerDeserializer;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.Date;
+
+/**
+ * Created by jimbo on 3/20/2015.
+ */
 public class ApiGateway {
-	private final String LOGIN_URL = "http://www.reddit.com/api/login";
-	private final String SAVED_URL_FORMAT = "http://www.reddit.com/user/%s/saved.json";
+    private String userAgent;
 
-	private String userAgent;
-
-	public ApiGateway(String userAgent) {
-		this.userAgent = userAgent;
-	}
-
-    public Login login(Login login) throws ConnectionException, IOException {
-    	ConnectionBuilder connection = new ConnectionBuilder()
-				.setUrl(LOGIN_URL)
-				.setMethod(ConnectionMethod.POST)
-				.setContent(login.getContentForm(), ContentType.FORM)
-				.setAcceptType(ContentType.JSON)
-				.setUserAgent(userAgent);
-		ConnectionResponse response = ConnectionResponse.parseResponse(connection.connect());
-		Gson gson = new GsonBuilder()
-				.registerTypeAdapter(Login.class, new Login.LoginDeserializer(login))
-				.registerTypeAdapter(Errors.class, new Errors.ErrorsDeserializer())
-				.registerTypeAdapter(Error.class, new Error.ErrorDeserializer())
-				.create();
-		return gson.fromJson(response.getResponseBody(), Login.class);
+    public Login login(String username, String password) throws IOException, ConnectionException {
+        IRequestManager loginRequestManager = new LoginRequestManager()
+                .setUsername(username)
+                .setPassword(password);
+        return getLogin(loginRequestManager);
     }
-    
-    public Saved saved(Login login) throws ConnectionException, IOException {
-		ConnectionBuilder connection = new ConnectionBuilder()
-				.setUrl(String.format(SAVED_URL_FORMAT, login.getUsername()))
-				.setCookie("reddit_session=" + login.getCookie())
-				.addCustomHeader("X-Modhash", login.getModhash())
-				.setUserAgent(userAgent);
-		ConnectionResponse response = ConnectionResponse.parseResponse(connection.connect());
-		Gson gson = new GsonBuilder()
-				.registerTypeAdapter(Saved.class, new Saved.SavedDeserializer())
-				.registerTypeAdapter(Errors.class, new Errors.ErrorsDeserializer())
-				.registerTypeAdapter(Error.class, new Error.ErrorDeserializer())
-				.registerTypeAdapter(Comment.class, new Comment.CommentDeserializer())
-				.registerTypeAdapter(Link.class, new Link.LinkDeserializer())
-				.registerTypeAdapter(Media.class, new Media.MediaDeserializer())
-				.create();
-		return gson.fromJson(response.getResponseBody(), Saved.class);
+
+    public Listing saved(Login login) throws ConnectionException, IOException {
+        IRequestManager savedRequestManager = new SavedRequestManager()
+                .setLogin(login);
+        return getListing(savedRequestManager);
     }
+
+    public Login getLogin(IRequestManager loginRequestManager) throws ConnectionException, IOException {
+        ConnectionResponse response = loginRequestManager.request(userAgent);
+        Gson gson = new GsonBuilder()
+                .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+                .create();
+        LoginContainer loginContainer = gson.fromJson(response.getResponseBody(), LoginContainer.class);
+        return loginContainer.getJson();
+    }
+
+    public Listing getListing(IRequestManager requestManager) throws ConnectionException, IOException {
+        ConnectionResponse response = requestManager.request(userAgent);
+        Gson gson = new GsonBuilder()
+                .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+                .registerTypeAdapter(Thing.class, new Thing.SerializerDeserializer())
+                .registerTypeAdapter(FullName.class, new FullName.SerializerDeserializer())
+                .registerTypeAdapter(Date.class, new DateSerializerDeserializer().setDateFormat(DateSerializerDeserializer.TIMESTAMP))
+                .registerTypeAdapter(URL.class, new URLSerializerDeserializer())
+                .create();
+        return gson.fromJson(response.getResponseBody(), Listing.class);
+    }
+
+    public String getUserAgent() {
+        return userAgent;
+    }
+    public ApiGateway setUserAgent(String userAgent) {
+        this.userAgent = userAgent;
+        return this;
+    }
+
 }

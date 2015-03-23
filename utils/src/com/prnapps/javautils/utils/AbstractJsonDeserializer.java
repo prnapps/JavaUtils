@@ -18,32 +18,56 @@ public abstract class AbstractJsonDeserializer<I> implements JsonDeserializer<I>
     public abstract I deserialize(JsonElement element, Type type, JsonDeserializationContext context) throws JsonParseException;
 
     protected int getInt(JsonElement element) {
-        if(element == null) return 0;
-        return element.isJsonNull() ? 0 : element.getAsInt();
+        return getInt(element, 0);
+    }
+
+    protected int getInt(JsonElement element, int defaultValue) {
+        if(element == null) return defaultValue;
+        return element.isJsonNull() ? defaultValue : element.getAsInt();
     }
 
     protected long getLong(JsonElement element) {
-        if(element == null) return 0;
-        return element.isJsonNull() ? 0 : element.getAsLong();
+        return getLong(element, 0);
+    }
+
+    protected long getLong(JsonElement element, long defaultValue) {
+        if(element == null) return defaultValue;
+        return element.isJsonNull() ? defaultValue : element.getAsLong();
     }
 
     protected boolean getBoolean(JsonElement element) {
-        if(element == null) return false;
-        return element.isJsonNull() ? false : element.getAsBoolean();
+        return getBoolean(element, false);
+    }
+
+    protected boolean getBoolean(JsonElement element, boolean defaultValue) {
+        if(element == null) return defaultValue;
+        return element.isJsonNull() ? defaultValue : element.getAsBoolean();
     }
 
     protected String getString(JsonElement element) {
-        if(element == null) return null;
-        return element.isJsonNull() ? null : element.getAsString();
+        return getString(element, null);
+    }
+
+    protected String getString(JsonElement element, String defaultValue) {
+        if(element == null) return defaultValue;
+        return element.isJsonNull() ? defaultValue : element.getAsString();
     }
 
     protected JsonObject getJsonObject(JsonElement element) {
-        if(element == null) return null;
-        return element.isJsonNull() ? null : element.getAsJsonObject();
+        return getJsonObject(element, null);
+    }
+
+    protected JsonObject getJsonObject(JsonElement element, JsonObject defaultValue) {
+        if(element == null) return defaultValue;
+        return element.isJsonNull() ? defaultValue : element.getAsJsonObject();
     }
 
     protected JsonArray getJsonArray(JsonElement element) {
-        if(element == null) return null;
-        return element.isJsonNull() ? null : element.getAsJsonArray();
+        return getJsonArray(element, null);
+    }
+
+    protected JsonArray getJsonArray(JsonElement element, JsonArray defaultValue) {
+        if(element == null) return defaultValue;
+        return element.isJsonNull() ? defaultValue : element.getAsJsonArray();
     }
 }

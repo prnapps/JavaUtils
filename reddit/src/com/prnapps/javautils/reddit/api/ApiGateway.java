@@ -36,9 +36,15 @@ public class ApiGateway {
         return getListing(savedRequestManager);
     }
 
-    public Listing subreddit(String subreddit, Login login) {
-        //TODO: get subreddit
-        return null;
+    public Listing subreddit(String subredditName) throws ConnectionException, IOException {
+        return subreddit(subredditName, SubredditRequestManager.Order.HOT);
+    }
+
+    public Listing subreddit(String subredditName, SubredditRequestManager.Order subredditOrder) throws ConnectionException, IOException {
+        IRequestManager requestManager = new SubredditRequestManager()
+                .setSubredditName(subredditName)
+                .setSubredditOrder(subredditOrder);
+        return getListing(requestManager);
     }
 
     public Login getLogin(LoginRequestManager loginRequestManager) throws ConnectionException, IOException {

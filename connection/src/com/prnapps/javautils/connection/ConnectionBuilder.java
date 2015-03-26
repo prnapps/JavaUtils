@@ -131,7 +131,7 @@ public class ConnectionBuilder {
         if(customHeaders == null) {
             customHeaders = new ArrayList<NameValuePair>();
         }
-        customHeaders.add(new NameValuePair(name, value));
+        customHeaders.add(new NameValuePair().setName(name).setValue(value));
         return this;
     }
 
@@ -187,7 +187,7 @@ public class ConnectionBuilder {
 
         if(customHeaders != null) {
             for(NameValuePair header : customHeaders) {
-                connection.addRequestProperty(header.getName(), header.getValue());
+                connection.addRequestProperty(header.getName(), header.getValue().toString());
             }
         }
 

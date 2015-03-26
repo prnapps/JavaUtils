@@ -37,13 +37,28 @@ public class ApiGateway {
     }
 
     public Listing subreddit(String subredditName) throws ConnectionException, IOException {
-        return subreddit(subredditName, SubredditRequestManager.Order.HOT);
+        IRequestManager requestManager = new SubredditRequestManager()
+                .setSubredditName(subredditName);
+        return getListing(requestManager);
     }
 
-    public Listing subreddit(String subredditName, SubredditRequestManager.Order subredditOrder) throws ConnectionException, IOException {
+    public Listing subreddit(String subredditName, String subredditOrder) throws ConnectionException, IOException {
         IRequestManager requestManager = new SubredditRequestManager()
                 .setSubredditName(subredditName)
                 .setSubredditOrder(subredditOrder);
+        return getListing(requestManager);
+    }
+
+    public Listing subreddit(String subredditName, String subredditOrder, String before, String after, String limit, String count, String show)
+            throws ConnectionException, IOException {
+        IRequestManager requestManager = new SubredditRequestManager()
+                .setSubredditName(subredditName)
+                .setSubredditOrder(subredditOrder)
+                .setBefore(before)
+                .setAfter(after)
+                .setLimit(limit)
+                .setCount(count)
+                .setShow(show);
         return getListing(requestManager);
     }
 

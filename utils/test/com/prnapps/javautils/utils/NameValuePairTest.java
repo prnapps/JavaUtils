@@ -3,7 +3,6 @@ package com.prnapps.javautils.utils;
 import junit.framework.TestCase;
 
 import java.io.UnsupportedEncodingException;
-import java.util.Date;
 
 /**
  * Created by jimbo on 11/30/2014.
@@ -63,19 +62,19 @@ public class NameValuePairTest extends TestCase {
     }
 
     public void testListToJson() {
-        assertEquals(NameValuePair.toJson(pair1, pair2, pair3, pair4),
-                "\"test_name\": \"test value\",\n\"test_name\": 1,\n\"test_name\": true,\n\"test_name\": null");
+        assertEquals(NameValuePair.toJson(pair1, pair2, pair3, pair4, pair5),
+                "\"test_name\": \"test value\",\n\"test_name\": 1,\n\"test_name\": true,\n\"test_name\": null,\n\"test_name\": 3.1415");
     }
 
     public void testListToXml() {
-        assertEquals(NameValuePair.toXml(pair1, pair2, pair3, pair4),
-                "<test_name>test value</test_name>\n<test_name>1</test_name>\n<test_name>true</test_name>\n<test_name />");
+        assertEquals(NameValuePair.toXml(pair1, pair2, pair3, pair4, pair5),
+                "<test_name>test value</test_name>\n<test_name>1</test_name>\n<test_name>true</test_name>\n<test_name />\n<test_name>3.1415</test_name>");
     }
 
     public void testListToUrlParam() {
         try {
-            assertEquals(NameValuePair.toUrlParams(pair1, pair2, pair3, pair4),
-                    "?test+name=test+value&test+name=1&test+name=true&test+name=");
+            assertEquals(NameValuePair.toUrlParams(pair1, pair2, pair3, pair4, pair5),
+                    "?test+name=test+value&test+name=1&test+name=true&test+name=&test+name=3.1415");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
             assertTrue(false);

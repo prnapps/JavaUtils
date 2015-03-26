@@ -18,7 +18,7 @@ public class ApiGatewayTest extends TestCase {
     public void testLogin() {
         try {
             ApiGateway apiGateway = new ApiGateway().setUserAgent(USER_AGENT);
-            Login login = apiGateway.getLogin(new MockRequestManagerFactory().getMockLoginSavedManager());
+            Login login = apiGateway.getLogin((LoginRequestManager) new MockRequestManagerFactory().getMockLoginSavedManager());
             Assert.assertNotNull(login);
             Assert.assertEquals(login.getErrors().get(0).get(0), "WRONG_PASSWORD");
             Assert.assertEquals(login.getErrors().get(0).get(1), "invalid password");
@@ -28,7 +28,7 @@ public class ApiGatewayTest extends TestCase {
             Assert.assertEquals(login.getData().getModhash(), "bc5i88sviw4e0fdd5189025237c2c849f30920e3cc00d35841");
         } catch (ConnectionException | IOException e) {
             e.printStackTrace();
-            Assert.assertTrue(false);
+            assertTrue(false);
         }
     }
 
@@ -40,8 +40,20 @@ public class ApiGatewayTest extends TestCase {
             Assert.assertEquals(saved.getData().getModhash(), "ofo4hr3oie1f6be504d4e04d657a4ec0b81f80c7b83a6907b1");
         } catch (ConnectionException | IOException e) {
             e.printStackTrace();
-            Assert.assertTrue(false);
+            assertTrue(false);
         }
+    }
 
+    public void testGetSubreddit() {
+        try {
+            ApiGateway apiGateway = new ApiGateway().setUserAgent(USER_AGENT);
+            Listing subreddit = apiGateway.getListing(new MockRequestManagerFactory().getMockSubredditRequestManager());
+            assertNotNull(subreddit);
+            assertEquals(subreddit.getKind(), "Listing");
+            assertEquals(subreddit.getData().getChildren().size(), 3);
+        } catch (ConnectionException | IOException e) {
+            e.printStackTrace();
+            assertTrue(false);
+        }
     }
 }

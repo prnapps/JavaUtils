@@ -1,4 +1,4 @@
-package com.prnapps.javautils.connection;
+package com.prnapps.javautils.http;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,18 +11,18 @@ import java.util.Map;
 /**
  * Created by jimbo on 11/29/2014.
  */
-public class ConnectionResponse {
+public class HttpResponse {
     protected int statusCode;
     protected String responseBody;
     protected Map<String, List<String>> headers;
 
-    public ConnectionResponse() { }
+    public HttpResponse() { }
 
     public String getResponseBody() {
         return responseBody;
     }
 
-    public ConnectionResponse setResponseBody(String responseBody) {
+    public HttpResponse setResponseBody(String responseBody) {
         this.responseBody = responseBody;
         return this;
     }
@@ -31,7 +31,7 @@ public class ConnectionResponse {
         return statusCode;
     }
 
-    public ConnectionResponse setStatusCode(int statusCode) {
+    public HttpResponse setStatusCode(int statusCode) {
         this.statusCode = statusCode;
         return this;
     }
@@ -40,19 +40,19 @@ public class ConnectionResponse {
         return headers;
     }
 
-    public ConnectionResponse setHeaders(Map<String, List<String>> headers) {
+    public HttpResponse setHeaders(Map<String, List<String>> headers) {
         this.headers = headers;
         return this;
     }
 
-    public static ConnectionResponse parseResponse(HttpURLConnection connection) throws ConnectionException, IOException {
-        ConnectionResponse response = new ConnectionResponse();
+    public static HttpResponse parseResponse(HttpURLConnection connection) throws HttpException, IOException {
+        HttpResponse response = new HttpResponse();
         try {
             if((response.statusCode = connection.getResponseCode()) == HttpURLConnection.HTTP_OK) {
                 response.responseBody = response.readStream(connection.getInputStream());
                 response.headers = connection.getHeaderFields();
             } else {
-                throw new ConnectionException(response.statusCode, response.readStream(connection.getErrorStream()));
+                throw new HttpException(response.statusCode, response.readStream(connection.getErrorStream()));
             }
         } finally {
             if(connection != null) {
@@ -63,9 +63,9 @@ public class ConnectionResponse {
     }
 
     /**
-     * <p>Converts the input stream returned from the url connection to a string.</p>
+     * <p>Converts the input stream returned from the url http to a string.</p>
      *
-     * @param stream the url connection response stream
+     * @param stream the url http response stream
      * @return the response string
      * @throws IOException
      */

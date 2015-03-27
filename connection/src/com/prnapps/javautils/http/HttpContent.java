@@ -1,9 +1,9 @@
-package com.prnapps.javautils.connection;
+package com.prnapps.javautils.http;
 
 /**
 * Created by jimbo on 11/29/2014.
 */
-public enum ContentType {
+public enum HttpContent {
     JSON ("application/json"),
     XML ("text/xml"),
     HTML ("text/html"),
@@ -15,7 +15,7 @@ public enum ContentType {
 
     private String string;
 
-    ContentType(String string) {
+    HttpContent(String string) {
         this.string = string;
     }
 

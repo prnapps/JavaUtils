@@ -1,4 +1,4 @@
-package com.prnapps.javautils.connection;
+package com.prnapps.javautils.http;
 
 import com.prnapps.javautils.utils.NameValuePair;
 
@@ -24,18 +24,18 @@ import java.io.InputStream;
 /**
  * Created by jimbo on 11/29/2014.
  */
-public class ConnectionBuilder {
+public class HttpBuilder {
     private final int maxRedirectAttempts = 5;
 
     private HttpURLConnection connection;
-    private ConnectionMethod method = ConnectionMethod.GET;
+    private HttpMethod method = HttpMethod.GET;
     private URL url;
     private boolean secure = false;
     private String content;
-    private ContentType contentType;
+    private HttpContent httpContent;
     private int contentLength;
     private boolean hasContent = false;
-    private ContentType acceptType = ContentType.HTML;
+    private HttpContent acceptType = HttpContent.HTML;
     private List<String> cookies;
     private List<NameValuePair> customHeaders;
     private String userAgent;
@@ -43,57 +43,57 @@ public class ConnectionBuilder {
     private TrustManager[] trustManager = null;
     private int redirects;
 
-    public ConnectionBuilder() {
+    public HttpBuilder() {
         cookies = new ArrayList<String>();
         customHeaders = new ArrayList<NameValuePair>();
     }
 
-    public ConnectionBuilder setMethod(ConnectionMethod method) {
+    public HttpBuilder setMethod(HttpMethod method) {
         this.method = method;
         return this;
     }
 
-    public ConnectionBuilder setUrl(String url) throws MalformedURLException {
+    public HttpBuilder setUrl(String url) throws MalformedURLException {
         this.url = new URL(url);
         this.secure = url.startsWith("https");
         setAcceptType(url);
         return this;
     }
 
-    public ConnectionBuilder setContent(String content, ContentType contentType) {
+    public HttpBuilder setContent(String content, HttpContent httpContent) {
         this.hasContent = true;
         this.content = content;
         this.contentLength = content.getBytes().length;
-        this.contentType = contentType;
+        this.httpContent = httpContent;
         return this;
     }
 
-    public ConnectionBuilder setAcceptType(ContentType acceptType) {
+    public HttpBuilder setAcceptType(HttpContent acceptType) {
         this.acceptType = acceptType;
         return this;
     }
 
-    public ConnectionBuilder setAcceptType(String url) {
+    public HttpBuilder setAcceptType(String url) {
         if(url.endsWith(".mp3")) {
-            this.acceptType = ContentType.MP3;
+            this.acceptType = HttpContent.MP3;
         } else if(url.endsWith(".m4a")) {
-            this.acceptType = ContentType.M4A;
+            this.acceptType = HttpContent.M4A;
         } else if(url.endsWith(".m4v") || url.endsWith(".mp4")) {
-            this.acceptType = ContentType.MP4;
+            this.acceptType = HttpContent.MP4;
         } else if(url.endsWith(".json")) {
-            this.acceptType = ContentType.JSON;
+            this.acceptType = HttpContent.JSON;
         } else if(url.endsWith(".xml")) {
-            this.acceptType = ContentType.XML;
+            this.acceptType = HttpContent.XML;
         }
         return this;
     }
 
-    public ConnectionBuilder setCookies(List<String> cookies) {
+    public HttpBuilder setCookies(List<String> cookies) {
         this.cookies = cookies;
         return this;
     }
 
-    public ConnectionBuilder setCookie(String cookie) {
+    public HttpBuilder setCookie(String cookie) {
         if(cookies == null) {
             cookies = new ArrayList<String>();
         }
@@ -101,17 +101,17 @@ public class ConnectionBuilder {
         return this;
     }
 
-    public ConnectionBuilder setCustomHeaders(List<NameValuePair> customHeaders) {
+    public HttpBuilder setCustomHeaders(List<NameValuePair> customHeaders) {
         this.customHeaders = customHeaders;
         return this;
     }
 
-    public ConnectionBuilder setCustomHeaders(NameValuePair...pairs) {
+    public HttpBuilder setCustomHeaders(NameValuePair...pairs) {
         customHeaders = Arrays.asList(pairs);
         return this;
     }
 
-    public ConnectionBuilder addCustomHeaders(List<NameValuePair> customHeaders) {
+    public HttpBuilder addCustomHeaders(List<NameValuePair> customHeaders) {
         if(customHeaders == null) {
             customHeaders = new ArrayList<NameValuePair>();
         }
@@ -119,7 +119,7 @@ public class ConnectionBuilder {
         return this;
     }
 
-    public ConnectionBuilder addCustomHeaders(NameValuePair...pairs) {
+    public HttpBuilder addCustomHeaders(NameValuePair...pairs) {
         if(customHeaders == null) {
             customHeaders = new ArrayList<NameValuePair>();
         }
@@ -127,7 +127,7 @@ public class ConnectionBuilder {
         return this;
     }
 
-    public ConnectionBuilder addCustomHeader(String name, String value) {
+    public HttpBuilder addCustomHeader(String name, String value) {
         if(customHeaders == null) {
             customHeaders = new ArrayList<NameValuePair>();
         }
@@ -135,27 +135,27 @@ public class ConnectionBuilder {
         return this;
     }
 
-    public ConnectionBuilder setUserAgent(String userAgent) {
+    public HttpBuilder setUserAgent(String userAgent) {
         this.userAgent = userAgent;
         return this;
     }
 
-    public ConnectionBuilder setTrustManager(TrustManager[] trustManager) {
+    public HttpBuilder setTrustManager(TrustManager[] trustManager) {
         this.trustManager = trustManager;
         return this;
     }
 
-    public ConnectionBuilder setKeyManager(KeyManager[] keyManager) {
+    public HttpBuilder setKeyManager(KeyManager[] keyManager) {
         this.keyManager = keyManager;
         return this;
     }
 
-    public static ConnectionBuilder get(String link) throws MalformedURLException {
-        return new ConnectionBuilder().setUrl(link).setAcceptType(link);
+    public static HttpBuilder get(String link) throws MalformedURLException {
+        return new HttpBuilder().setUrl(link).setAcceptType(link);
     }
 
-    public static ConnectionBuilder post(String link, String content) throws MalformedURLException {
-        return new ConnectionBuilder().setMethod(ConnectionMethod.POST).setUrl(link).setContent(content, ContentType.JSON).setAcceptType(ContentType.JSON);
+    public static HttpBuilder post(String link, String content) throws MalformedURLException {
+        return new HttpBuilder().setMethod(HttpMethod.POST).setUrl(link).setContent(content, HttpContent.JSON).setAcceptType(HttpContent.JSON);
     }
 
     public HttpURLConnection connect() throws IOException {
@@ -192,7 +192,7 @@ public class ConnectionBuilder {
         }
 
         if(hasContent && method.allowsContent()) {
-            connection.setRequestProperty("Content-Type", contentType.toString());
+            connection.setRequestProperty("Content-Type", httpContent.toString());
             connection.setRequestProperty("Content-Length", "" + contentLength);
             connection.setUseCaches(false);
             connection.setDoOutput(true);

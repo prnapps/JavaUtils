@@ -1,12 +1,12 @@
-package com.prnapps.javautils.connection;
+package com.prnapps.javautils.http;
 
 /**
  * Created by jimbo on 11/29/2014.
  */
-public class ConnectionException extends Exception {
+public class HttpException extends Exception {
     private int statusCode;
 
-    public ConnectionException(int statusCode, String message) {
+    public HttpException(int statusCode, String message) {
         super(message);
         this.statusCode = statusCode;
     }

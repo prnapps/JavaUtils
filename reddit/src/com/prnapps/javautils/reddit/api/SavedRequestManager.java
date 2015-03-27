@@ -1,8 +1,8 @@
 package com.prnapps.javautils.reddit.api;
 
-import com.prnapps.javautils.connection.ConnectionBuilder;
-import com.prnapps.javautils.connection.ConnectionException;
-import com.prnapps.javautils.connection.ConnectionResponse;
+import com.prnapps.javautils.http.HttpBuilder;
+import com.prnapps.javautils.http.HttpException;
+import com.prnapps.javautils.http.HttpResponse;
 import com.prnapps.javautils.reddit.domain.login.Login;
 
 import java.io.IOException;
@@ -16,13 +16,13 @@ public class SavedRequestManager implements IRequestManager {
     private Login login;
 
     @Override
-    public ConnectionResponse request(String userAgent) throws ConnectionException, IOException {
-        ConnectionBuilder connection = new ConnectionBuilder()
+    public HttpResponse request(String userAgent) throws HttpException, IOException {
+        HttpBuilder connection = new HttpBuilder()
                 .setUrl(String.format(URL_FORMAT, login.getUsername()))
                 .setCookie("reddit_session=" + login.getCookie())
                 .addCustomHeader("X-Modhash", login.getModhash())
                 .setUserAgent(userAgent);
-        return ConnectionResponse.parseResponse(connection.connect());
+        return HttpResponse.parseResponse(connection.connect());
     }
 
     public Login getLogin() {

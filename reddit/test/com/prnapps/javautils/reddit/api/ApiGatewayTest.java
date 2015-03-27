@@ -1,6 +1,6 @@
 package com.prnapps.javautils.reddit.api;
 
-import com.prnapps.javautils.connection.ConnectionException;
+import com.prnapps.javautils.http.HttpException;
 import com.prnapps.javautils.reddit.domain.listing.Listing;
 import com.prnapps.javautils.reddit.domain.login.Login;
 import com.prnapps.javautils.reddit.mock.MockRequestManagerFactory;
@@ -26,7 +26,7 @@ public class ApiGatewayTest extends TestCase {
             Assert.assertEquals(login.getData().getNeedHttps(), false);
             Assert.assertEquals(login.getData().getCookie(), "8013673,2014-09-21T08:01:05,2c32f28703501a9f72a838d7b245f4f157b8d45e");
             Assert.assertEquals(login.getData().getModhash(), "bc5i88sviw4e0fdd5189025237c2c849f30920e3cc00d35841");
-        } catch (ConnectionException | IOException e) {
+        } catch (HttpException | IOException e) {
             e.printStackTrace();
             assertTrue(false);
         }
@@ -38,7 +38,7 @@ public class ApiGatewayTest extends TestCase {
             Listing saved = apiGateway.getListing(new MockRequestManagerFactory().getMockSavedRequestManager());
             Assert.assertNotNull(saved);
             Assert.assertEquals(saved.getData().getModhash(), "ofo4hr3oie1f6be504d4e04d657a4ec0b81f80c7b83a6907b1");
-        } catch (ConnectionException | IOException e) {
+        } catch (HttpException | IOException e) {
             e.printStackTrace();
             assertTrue(false);
         }
@@ -51,7 +51,7 @@ public class ApiGatewayTest extends TestCase {
             assertNotNull(subreddit);
             assertEquals(subreddit.getKind(), "Listing");
             assertEquals(subreddit.getData().getChildren().size(), 3);
-        } catch (ConnectionException | IOException e) {
+        } catch (HttpException | IOException e) {
             e.printStackTrace();
             assertTrue(false);
         }

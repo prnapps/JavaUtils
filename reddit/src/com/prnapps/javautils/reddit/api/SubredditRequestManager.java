@@ -1,6 +1,6 @@
 package com.prnapps.javautils.reddit.api;
 
-import com.prnapps.javautils.connection.*;
+import com.prnapps.javautils.http.*;
 import com.prnapps.javautils.utils.NameValuePair;
 import com.prnapps.javautils.utils.StringUtils;
 
@@ -33,13 +33,13 @@ public class SubredditRequestManager implements IRequestManager {
     private String period;
 
     @Override
-    public ConnectionResponse request(String userAgent) throws ConnectionException, IOException {
-        ConnectionBuilder connection = new ConnectionBuilder()
+    public HttpResponse request(String userAgent) throws HttpException, IOException {
+        HttpBuilder connection = new HttpBuilder()
                 .setUrl(String.format(URL_FORMAT, subredditName, subredditOrder.toString(), generateParams()))
-                .setMethod(ConnectionMethod.GET)
-                .setAcceptType(ContentType.JSON)
+                .setMethod(HttpMethod.GET)
+                .setAcceptType(HttpContent.JSON)
                 .setUserAgent(userAgent);
-        return ConnectionResponse.parseResponse(connection.connect());
+        return HttpResponse.parseResponse(connection.connect());
     }
 
     protected String generateParams() {

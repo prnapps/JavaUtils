@@ -1,7 +1,7 @@
 package com.prnapps.javautils.reddit.api;
 
-import com.prnapps.javautils.connection.ConnectionException;
-import com.prnapps.javautils.connection.ConnectionResponse;
+import com.prnapps.javautils.http.HttpException;
+import com.prnapps.javautils.http.HttpResponse;
 
 import java.io.IOException;
 
@@ -9,5 +9,5 @@ import java.io.IOException;
  * Created by jimbo on 3/20/2015.
  */
 public interface IRequestManager {
-    public ConnectionResponse request(String userAgent) throws ConnectionException, IOException;
+    public HttpResponse request(String userAgent) throws HttpException, IOException;
 }

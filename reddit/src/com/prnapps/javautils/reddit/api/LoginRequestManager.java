@@ -1,6 +1,6 @@
 package com.prnapps.javautils.reddit.api;
 
-import com.prnapps.javautils.connection.*;
+import com.prnapps.javautils.http.*;
 
 import java.io.IOException;
 
@@ -15,14 +15,14 @@ public class LoginRequestManager implements IRequestManager {
     private String password;
 
     @Override
-    public ConnectionResponse request(String userAgent) throws IOException, ConnectionException {
-        ConnectionBuilder connection = new ConnectionBuilder()
+    public HttpResponse request(String userAgent) throws IOException, HttpException {
+        HttpBuilder connection = new HttpBuilder()
                 .setUrl(LOGIN_URL)
-                .setMethod(ConnectionMethod.POST)
-                .setContent(String.format(LOGIN_CONTENT_FORMAT, username, password), ContentType.FORM)
-                .setAcceptType(ContentType.JSON)
+                .setMethod(HttpMethod.POST)
+                .setContent(String.format(LOGIN_CONTENT_FORMAT, username, password), HttpContent.FORM)
+                .setAcceptType(HttpContent.JSON)
                 .setUserAgent(userAgent);
-        return ConnectionResponse.parseResponse(connection.connect());
+        return HttpResponse.parseResponse(connection.connect());
     }
 
     public String getUsername() {

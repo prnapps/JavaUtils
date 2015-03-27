@@ -17,4 +17,5 @@ public class HttpException extends Exception {
     public void setStatusCode(int statusCode) {
         this.statusCode = statusCode;
     }
+
 }

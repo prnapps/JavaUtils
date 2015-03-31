@@ -2,13 +2,11 @@ package com.prnapps.javautils.imgur.api;
 
 import com.prnapps.javautils.http.HttpException;
 import com.prnapps.javautils.imgur.domain.AlbumResponse;
-import com.prnapps.javautils.imgur.domain.Image;
-import com.prnapps.javautils.imgur.domain.ImageResponse;
+import com.prnapps.javautils.imgur.domain.response.ImageResponse;
 import com.prnapps.javautils.imgur.mock.MockRequestManagerFactory;
 import junit.framework.TestCase;
 
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Created by jimbo on 3/31/2015.

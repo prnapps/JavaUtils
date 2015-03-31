@@ -2,7 +2,7 @@ package com.prnapps.javautils.imgur.mock;
 
 import com.prnapps.javautils.http.HttpException;
 import com.prnapps.javautils.http.HttpResponse;
-import com.prnapps.javautils.imgur.api.IRequestManager;
+import com.prnapps.javautils.imgur.api.endpoints.IEndPoint;
 
 import java.io.IOException;
 
@@ -11,8 +11,8 @@ import java.io.IOException;
  */
 public class MockRequestManagerFactory {
 
-    public IRequestManager getImageRequestManager() {
-        return new IRequestManager() {
+    public IEndPoint getImageRequestManager() {
+        return new IEndPoint() {
             @Override
             public HttpResponse request(String userAgent, String clientId) throws HttpException, IOException {
                 return new HttpResponse()
@@ -22,8 +22,8 @@ public class MockRequestManagerFactory {
         };
     }
 
-    public IRequestManager getAlbumRequestManager() {
-        return new IRequestManager() {
+    public IEndPoint getAlbumRequestManager() {
+        return new IEndPoint() {
             @Override
             public HttpResponse request(String userAgent, String clientId) throws HttpException, IOException {
                 return new HttpResponse()

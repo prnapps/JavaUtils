@@ -21,16 +21,20 @@ public class SubredditRequestManager implements IRequestManager {
     private final String URL_QUERY_SHOW = "show";
     private final String URL_QUERY_PERIOD = "t";
 
-    private String subredditName;
-    private Order subredditOrder = Order.HOT;
+    private final String subredditName;
 
     // params
+    private Order subredditOrder = Order.HOT;
     private String before;
     private String after;
     private String limit;
     private String count;
     private String show;
     private String period;
+
+    public SubredditRequestManager(String subredditName) {
+        this.subredditName = subredditName;
+    }
 
     @Override
     public HttpResponse request(String userAgent) throws HttpException, IOException {
@@ -73,10 +77,6 @@ public class SubredditRequestManager implements IRequestManager {
 
     public String getSubredditName() {
         return subredditName;
-    }
-    public SubredditRequestManager setSubredditName(String subredditName) {
-        this.subredditName = subredditName;
-        return this;
     }
     public Order getSubredditOrder() {
         return subredditOrder;

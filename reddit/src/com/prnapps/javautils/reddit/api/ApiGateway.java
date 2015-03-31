@@ -21,38 +21,36 @@ import java.util.Date;
  * Created by jimbo on 3/20/2015.
  */
 public class ApiGateway {
-    private String userAgent;
+    private final String userAgent;
+
+    public ApiGateway(String userAgent) {
+        this.userAgent = userAgent;
+    }
 
     public Login login(String username, String password) throws IOException, HttpException {
-        LoginRequestManager loginRequestManager = new LoginRequestManager()
-                .setUsername(username)
-                .setPassword(password);
+        LoginRequestManager loginRequestManager = new LoginRequestManager(username, password);
         return getLogin(loginRequestManager);
     }
 
     public Listing saved(Login login) throws HttpException, IOException {
-        IRequestManager savedRequestManager = new SavedRequestManager()
-                .setLogin(login);
+        IRequestManager savedRequestManager = new SavedRequestManager(login);
         return getListing(savedRequestManager);
     }
 
     public Listing subreddit(String subredditName) throws HttpException, IOException {
-        IRequestManager requestManager = new SubredditRequestManager()
-                .setSubredditName(subredditName);
+        IRequestManager requestManager = new SubredditRequestManager(subredditName);
         return getListing(requestManager);
     }
 
     public Listing subreddit(String subredditName, String subredditOrder) throws HttpException, IOException {
-        IRequestManager requestManager = new SubredditRequestManager()
-                .setSubredditName(subredditName)
+        IRequestManager requestManager = new SubredditRequestManager(subredditName)
                 .setSubredditOrder(subredditOrder);
         return getListing(requestManager);
     }
 
     public Listing subreddit(String subredditName, String subredditOrder, String before, String after, String limit, String count, String show)
             throws HttpException, IOException {
-        IRequestManager requestManager = new SubredditRequestManager()
-                .setSubredditName(subredditName)
+        IRequestManager requestManager = new SubredditRequestManager(subredditName)
                 .setSubredditOrder(subredditOrder)
                 .setBefore(before)
                 .setAfter(after)
@@ -81,14 +79,6 @@ public class ApiGateway {
                 .registerTypeAdapter(URL.class, new URLSerializerDeserializer())
                 .create();
         return gson.fromJson(response.getResponseBody(), Listing.class);
-    }
-
-    public String getUserAgent() {
-        return userAgent;
-    }
-    public ApiGateway setUserAgent(String userAgent) {
-        this.userAgent = userAgent;
-        return this;
     }
 
 }

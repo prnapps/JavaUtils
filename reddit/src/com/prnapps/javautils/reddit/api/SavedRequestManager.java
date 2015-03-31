@@ -13,7 +13,11 @@ import java.io.IOException;
 public class SavedRequestManager implements IRequestManager {
     private final String URL_FORMAT = "http://www.reddit.com/user/%s/saved.json";
 
-    private Login login;
+    private final Login login;
+
+    public SavedRequestManager(Login login) {
+        this.login = login;
+    }
 
     @Override
     public HttpResponse request(String userAgent) throws HttpException, IOException {
@@ -27,10 +31,6 @@ public class SavedRequestManager implements IRequestManager {
 
     public Login getLogin() {
         return login;
-    }
-    public SavedRequestManager setLogin(Login login) {
-        this.login = login;
-        return this;
     }
 
 }

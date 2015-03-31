@@ -11,8 +11,13 @@ public class LoginRequestManager implements IRequestManager {
     private final String LOGIN_URL = "http://www.reddit.com/listing/login";
     private final String LOGIN_CONTENT_FORMAT = "api_type=json&user=%s&passwd=%s&rem=true";
 
-    private String username;
-    private String password;
+    private final String username;
+    private final String password;
+
+    public LoginRequestManager(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 
     @Override
     public HttpResponse request(String userAgent) throws IOException, HttpException {
@@ -27,14 +32,6 @@ public class LoginRequestManager implements IRequestManager {
 
     public String getUsername() {
         return username;
-    }
-    public LoginRequestManager setUsername(String username) {
-        this.username = username;
-        return this;
-    }
-    public LoginRequestManager setPassword(String password) {
-        this.password = password;
-        return this;
     }
 
 }

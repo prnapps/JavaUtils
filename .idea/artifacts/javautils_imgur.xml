@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="javautils.imgur">
+    <output-path>$PROJECT_DIR$/out/artifacts/javautils_imgur</output-path>
+    <root id="archive" name="javautils.imgur.jar">
+      <element id="module-output" name="http" />
+      <element id="module-output" name="imgur" />
+      <element id="module-output" name="utils" />
+      <element id="library" level="project" name="com.google.code.gson:gson:2.3.1" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/imgur/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

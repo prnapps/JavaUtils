@@ -17,7 +17,7 @@ public class ApiGatewayTest extends TestCase {
 
     public void testLogin() {
         try {
-            ApiGateway apiGateway = new ApiGateway().setUserAgent(USER_AGENT);
+            ApiGateway apiGateway = new ApiGateway(USER_AGENT);
             Login login = apiGateway.getLogin((LoginRequestManager) new MockRequestManagerFactory().getMockLoginSavedManager());
             Assert.assertNotNull(login);
             Assert.assertEquals(login.getErrors().get(0).get(0), "WRONG_PASSWORD");
@@ -34,7 +34,7 @@ public class ApiGatewayTest extends TestCase {
 
     public void testGetSaved() {
         try {
-            ApiGateway apiGateway = new ApiGateway().setUserAgent(USER_AGENT);
+            ApiGateway apiGateway = new ApiGateway(USER_AGENT);
             Listing saved = apiGateway.getListing(new MockRequestManagerFactory().getMockSavedRequestManager());
             Assert.assertNotNull(saved);
             Assert.assertEquals(saved.getData().getModhash(), "ofo4hr3oie1f6be504d4e04d657a4ec0b81f80c7b83a6907b1");
@@ -46,7 +46,7 @@ public class ApiGatewayTest extends TestCase {
 
     public void testGetSubreddit() {
         try {
-            ApiGateway apiGateway = new ApiGateway().setUserAgent(USER_AGENT);
+            ApiGateway apiGateway = new ApiGateway(USER_AGENT);
             Listing subreddit = apiGateway.getListing(new MockRequestManagerFactory().getMockSubredditRequestManager());
             assertNotNull(subreddit);
             assertEquals(subreddit.getKind(), "Listing");

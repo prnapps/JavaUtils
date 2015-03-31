@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="javautils.http">
+    <output-path>$PROJECT_DIR$/out/artifacts/javautils_http</output-path>
+    <root id="archive" name="javautils.http.jar">
+      <element id="module-output" name="http" />
+      <element id="module-output" name="utils" />
+      <element id="library" level="project" name="com.google.code.gson:gson:2.3.1" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/http/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

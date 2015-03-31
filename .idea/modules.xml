@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaUtils.iml" filepath="$PROJECT_DIR$/JavaUtils.iml" />
       <module fileurl="file://$PROJECT_DIR$/http/http.iml" filepath="$PROJECT_DIR$/http/http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imgur/imgur.iml" filepath="$PROJECT_DIR$/imgur/imgur.iml" />
       <module fileurl="file://$PROJECT_DIR$/reddit/reddit.iml" filepath="$PROJECT_DIR$/reddit/reddit.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
     </modules>

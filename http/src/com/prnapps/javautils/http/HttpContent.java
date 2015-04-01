@@ -18,6 +18,7 @@ public enum HttpContent {
     MPG ("video/mpeg"),
     JPG ("image/jpeg"),
     GIF ("image/gif"),
+    PNG ("image/png"),
     BMP ("image/bmp"),
     TIFF ("image/tiff"),
     WORD ("application/msword"),

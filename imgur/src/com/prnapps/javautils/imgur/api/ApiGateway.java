@@ -7,10 +7,10 @@ import com.google.gson.reflect.TypeToken;
 import com.prnapps.javautils.http.HttpException;
 import com.prnapps.javautils.http.HttpResponse;
 import com.prnapps.javautils.imgur.api.endpoints.AlbumEndPoint;
+import com.prnapps.javautils.imgur.api.endpoints.AlbumImagesEndPoint;
 import com.prnapps.javautils.imgur.api.endpoints.IEndPoint;
 import com.prnapps.javautils.imgur.api.endpoints.ImageEndPoint;
 import com.prnapps.javautils.imgur.domain.Album;
-import com.prnapps.javautils.imgur.domain.AlbumResponse;
 import com.prnapps.javautils.imgur.domain.Image;
 import com.prnapps.javautils.imgur.domain.BasicResponse;
 import com.prnapps.javautils.utils.gson.DateSerializerDeserializer;
@@ -36,47 +36,41 @@ public class ApiGateway {
 
     public Image image(String imageId) throws IOException, HttpException {
         ImageEndPoint request = new ImageEndPoint(imageId);
-        BasicResponse<Image> response = getImageResponse(request);
-        return response.getData();
-    }
-
-    public List<Image> albumImage(String albumId) throws IOException, HttpException {
-        AlbumEndPoint request = new AlbumEndPoint(albumId);
-        BasicResponse<Album> response = getAlbumResponse(request);
-        return response.getData();
-    }
-
-    public BasicResponse getImageResponse(IEndPoint request) throws IOException, HttpException {
-        HttpResponse response = request.request(userAgent, clientId);
-        Gson gson = new GsonBuilder()
-                .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
-                .registerTypeAdapter(Date.class, new DateSerializerDeserializer().setDateFormat(DateSerializerDeserializer.TIMESTAMP))
-                .registerTypeAdapter(URL.class, new URLSerializerDeserializer())
-                .create();
         Type type = new TypeToken<BasicResponse<Image>>(){}.getType();
-        return gson.fromJson(response.getResponseBody(), type);
+        BasicResponse<Image> response = getResponse(request, type);
+        return response.getData();
     }
 
-    public BasicResponse getAlbumResponse(IEndPoint request) throws IOException, HttpException {
-        HttpResponse response = request.request(userAgent, clientId);
-        Gson gson = new GsonBuilder()
-                .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
-                .registerTypeAdapter(Date.class, new DateSerializerDeserializer().setDateFormat(DateSerializerDeserializer.TIMESTAMP))
-                .registerTypeAdapter(URL.class, new URLSerializerDeserializer())
-                .create();
+    public Album album(String albumId) throws IOException, HttpException {
+        AlbumEndPoint request = new AlbumEndPoint(albumId);
         Type type = new TypeToken<BasicResponse<Album>>(){}.getType();
-        return gson.fromJson(response.getResponseBody(), type);
+        BasicResponse<Album> response = getResponse(request, type);
+        return response.getData();
     }
 
-    public BasicResponse getAlbumImageResponse(IEndPoint request) throws IOException, HttpException {
+    public List<Image> albumImages(String albumId) throws IOException, HttpException {
+        AlbumImagesEndPoint request = new AlbumImagesEndPoint(albumId);
+        Type type = new TypeToken<BasicResponse<List<Image>>>(){}.getType();
+        BasicResponse<List<Image>> response = getResponse(request, type);
+        return response.getData();
+    }
+
+    public Image albumImage(String albumId, String imageId) throws IOException, HttpException {
+        AlbumImagesEndPoint request = new AlbumImagesEndPoint(albumId).setImageId(imageId);
+        Type type = new TypeToken<BasicResponse<Image>>(){}.getType();
+        BasicResponse<Image> response = getResponse(request, type);
+        return response.getData();
+    }
+
+    public BasicResponse getResponse(IEndPoint request, Type dataType) throws IOException, HttpException {
         HttpResponse response = request.request(userAgent, clientId);
         Gson gson = new GsonBuilder()
+                .excludeFieldsWithoutExposeAnnotation()
                 .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
                 .registerTypeAdapter(Date.class, new DateSerializerDeserializer().setDateFormat(DateSerializerDeserializer.TIMESTAMP))
                 .registerTypeAdapter(URL.class, new URLSerializerDeserializer())
                 .create();
-        Type type = new TypeToken<BasicResponse<List<Image>>>(){}.getType();
-        return gson.fromJson(response.getResponseBody(), type);
+        return gson.fromJson(response.getResponseBody(), dataType);
     }
 
 }

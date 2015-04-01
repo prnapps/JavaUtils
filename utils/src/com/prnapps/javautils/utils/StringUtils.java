@@ -71,4 +71,9 @@ public class StringUtils {
         }
         return list;
     }
+
+    public boolean containsPattern(String body, String regex) {
+        return findPattern(body, regex) != null;
+    }
+
 }

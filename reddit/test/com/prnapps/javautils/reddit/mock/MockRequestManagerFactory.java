@@ -2,8 +2,7 @@ package com.prnapps.javautils.reddit.mock;
 
 import com.prnapps.javautils.http.HttpException;
 import com.prnapps.javautils.http.HttpResponse;
-import com.prnapps.javautils.reddit.api.IRequestManager;
-import com.prnapps.javautils.reddit.api.SubredditRequestManager;
+import com.prnapps.javautils.reddit.api.endpoints.IEndPoint;
 
 import java.io.IOException;
 
@@ -12,8 +11,8 @@ import java.io.IOException;
  */
 public class MockRequestManagerFactory {
 
-    public IRequestManager getMockLoginSavedManager() {
-        return new IRequestManager() {
+    public IEndPoint getMockLoginSavedManager() {
+        return new IEndPoint() {
             @Override
             public HttpResponse request(String userAgent) throws HttpException, IOException {
                 return new HttpResponse()
@@ -23,8 +22,8 @@ public class MockRequestManagerFactory {
         };
     }
 
-    public IRequestManager getMockSavedRequestManager() {
-        return new IRequestManager() {
+    public IEndPoint getMockSavedRequestManager() {
+        return new IEndPoint() {
             @Override
             public HttpResponse request(String userAgent) throws HttpException, IOException {
                 return new HttpResponse()
@@ -34,8 +33,8 @@ public class MockRequestManagerFactory {
         };
     }
 
-    public IRequestManager getMockSubredditRequestManager() {
-        return new IRequestManager() {
+    public IEndPoint getMockSubredditRequestManager() {
+        return new IEndPoint() {
             @Override
             public HttpResponse request(String userAgent) throws HttpException, IOException {
                 return new HttpResponse()

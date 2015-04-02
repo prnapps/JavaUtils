@@ -1,4 +1,4 @@
-package com.prnapps.javautils.reddit.api;
+package com.prnapps.javautils.reddit.api.endpoints;
 
 import com.prnapps.javautils.http.*;
 import com.prnapps.javautils.utils.NameValuePair;
@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by jimbo on 3/24/2015.
  */
-public class SubredditRequestManager implements IRequestManager {
+public class SubredditEndPoint implements IEndPoint {
     private final String URL_FORMAT = "http://reddit.com/r/%s/%s.json%s";
     private final String URL_QUERY_BEFORE = "before";
     private final String URL_QUERY_AFTER = "after";
@@ -32,7 +32,7 @@ public class SubredditRequestManager implements IRequestManager {
     private String show;
     private String period;
 
-    public SubredditRequestManager(String subredditName) {
+    public SubredditEndPoint(String subredditName) {
         this.subredditName = subredditName;
     }
 
@@ -81,11 +81,11 @@ public class SubredditRequestManager implements IRequestManager {
     public Order getSubredditOrder() {
         return subredditOrder;
     }
-    public SubredditRequestManager setSubredditOrder(Order subredditOrder) {
+    public SubredditEndPoint setSubredditOrder(Order subredditOrder) {
         this.subredditOrder = subredditOrder;
         return this;
     }
-    public SubredditRequestManager setSubredditOrder(String subredditOrder) {
+    public SubredditEndPoint setSubredditOrder(String subredditOrder) {
         if(Order.NEW.toString().equalsIgnoreCase(subredditOrder)) {
             return setSubredditOrder(Order.NEW);
         } else if(Order.TOP.toString().equalsIgnoreCase(subredditOrder)) {
@@ -98,42 +98,42 @@ public class SubredditRequestManager implements IRequestManager {
     public String getBefore() {
         return before;
     }
-    public SubredditRequestManager setBefore(String before) {
+    public SubredditEndPoint setBefore(String before) {
         this.before = before;
         return this;
     }
     public String getAfter() {
         return after;
     }
-    public SubredditRequestManager setAfter(String after) {
+    public SubredditEndPoint setAfter(String after) {
         this.after = after;
         return this;
     }
     public String getLimit() {
         return limit;
     }
-    public SubredditRequestManager setLimit(String limit) {
+    public SubredditEndPoint setLimit(String limit) {
         this.limit = limit;
         return this;
     }
     public String getCount() {
         return count;
     }
-    public SubredditRequestManager setCount(String count) {
+    public SubredditEndPoint setCount(String count) {
         this.count = count;
         return this;
     }
     public String getShow() {
         return show;
     }
-    public SubredditRequestManager setShow(String show) {
+    public SubredditEndPoint setShow(String show) {
         this.show = show;
         return this;
     }
     public String getPeriod() {
         return period;
     }
-    public SubredditRequestManager setPeriod(String period) {
+    public SubredditEndPoint setPeriod(String period) {
         this.period = period;
         return this;
     }

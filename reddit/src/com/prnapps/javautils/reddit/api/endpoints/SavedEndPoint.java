@@ -1,4 +1,4 @@
-package com.prnapps.javautils.reddit.api;
+package com.prnapps.javautils.reddit.api.endpoints;
 
 import com.prnapps.javautils.http.HttpBuilder;
 import com.prnapps.javautils.http.HttpException;
@@ -10,12 +10,12 @@ import java.io.IOException;
 /**
  * Created by jimbo on 3/20/2015.
  */
-public class SavedRequestManager implements IRequestManager {
+public class SavedEndPoint implements IEndPoint {
     private final String URL_FORMAT = "http://www.reddit.com/user/%s/saved.json";
 
     private final Login login;
 
-    public SavedRequestManager(Login login) {
+    public SavedEndPoint(Login login) {
         this.login = login;
     }
 

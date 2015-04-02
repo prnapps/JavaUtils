@@ -1,4 +1,4 @@
-package com.prnapps.javautils.reddit.api;
+package com.prnapps.javautils.reddit.api.endpoints;
 
 import com.prnapps.javautils.http.*;
 
@@ -7,14 +7,14 @@ import java.io.IOException;
 /**
  * Created by jimbo on 3/20/2015.
  */
-public class LoginRequestManager implements IRequestManager {
+public class LoginEndPoint implements IEndPoint {
     private final String LOGIN_URL = "http://www.reddit.com/listing/login";
     private final String LOGIN_CONTENT_FORMAT = "api_type=json&user=%s&passwd=%s&rem=true";
 
     private final String username;
     private final String password;
 
-    public LoginRequestManager(String username, String password) {
+    public LoginEndPoint(String username, String password) {
         this.username = username;
         this.password = password;
     }

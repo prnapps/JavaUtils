@@ -1,7 +1,7 @@
 package com.prnapps.javautils.reddit.api;
 
 import com.prnapps.javautils.http.HttpException;
-import com.prnapps.javautils.reddit.api.endpoints.LoginEndPoint;
+import com.prnapps.javautils.reddit.api.endpoints.LoginRequest;
 import com.prnapps.javautils.reddit.domain.listing.Listing;
 import com.prnapps.javautils.reddit.domain.login.Login;
 import com.prnapps.javautils.reddit.mock.MockRequestManagerFactory;
@@ -19,7 +19,7 @@ public class ApiGatewayTest extends TestCase {
     public void testLogin() {
         try {
             ApiGateway apiGateway = new ApiGateway(USER_AGENT);
-            Login login = apiGateway.getLogin((LoginEndPoint) new MockRequestManagerFactory().getMockLoginSavedManager());
+            Login login = apiGateway.getLogin((LoginRequest) new MockRequestManagerFactory().getMockLoginSavedManager());
             Assert.assertNotNull(login);
             Assert.assertEquals(login.getErrors().get(0).get(0), "WRONG_PASSWORD");
             Assert.assertEquals(login.getErrors().get(0).get(1), "invalid password");

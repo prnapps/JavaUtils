@@ -10,17 +10,18 @@ import java.io.IOException;
 /**
  * Created by jimbo on 3/20/2015.
  */
-public class SavedEndPoint implements IEndPoint {
+public class SavedRequest implements IRequest {
     private final String URL_FORMAT = "http://www.reddit.com/user/%s/saved.json";
 
-    private final Login login;
+    private final String userAgent;
+    private Login login;
 
-    public SavedEndPoint(Login login) {
-        this.login = login;
+    public SavedRequest(String userAgent) {
+        this.userAgent = userAgent;
     }
 
     @Override
-    public HttpResponse request(String userAgent) throws HttpException, IOException {
+    public HttpResponse request() throws HttpException, IOException {
         HttpBuilder connection = new HttpBuilder()
                 .setUrl(String.format(URL_FORMAT, login.getUsername()))
                 .setCookie("reddit_session=" + login.getCookie())
@@ -31,6 +32,10 @@ public class SavedEndPoint implements IEndPoint {
 
     public Login getLogin() {
         return login;
+    }
+    public SavedRequest setLogin(Login login) {
+        this.login = login;
+        return this;
     }
 
 }

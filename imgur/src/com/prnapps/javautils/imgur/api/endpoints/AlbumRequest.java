@@ -10,19 +10,22 @@ import java.io.IOException;
 /**
  * Created by jimbo on 3/31/2015.
  */
-public class AlbumEndPoint implements IEndPoint {
+public class AlbumRequest implements IRequest {
     private final String LINK_FORMAT = "https://api.imgur.com/3/album/%s";
     private final String CLIENTID_HEADER = "Authorization";
     private final String CLIENTID_VALUE_FORMAT = "Client-ID %s";
 
-    private final String albumId;
+    private final String userAgent;
+    private final String clientId;
+    private String albumId;
 
-    public AlbumEndPoint(String albumId) {
-        this.albumId = albumId;
+    public AlbumRequest(String userAgent, String clientId) {
+        this.userAgent = userAgent;
+        this.clientId = clientId;
     }
 
     @Override
-    public HttpResponse request(String userAgent, String clientId) throws HttpException, IOException {
+    public HttpResponse request() throws HttpException, IOException {
         HttpBuilder http = new HttpBuilder()
                 .setUrl(String.format(LINK_FORMAT, albumId))
                 .setUserAgent(userAgent)
@@ -33,6 +36,10 @@ public class AlbumEndPoint implements IEndPoint {
 
     public String getAlbumId() {
         return albumId;
+    }
+    public AlbumRequest setAlbumId(String albumId) {
+        this.albumId = albumId;
+        return this;
     }
 
 }

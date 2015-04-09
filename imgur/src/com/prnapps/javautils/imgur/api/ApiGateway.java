@@ -6,10 +6,10 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.prnapps.javautils.http.HttpException;
 import com.prnapps.javautils.http.HttpResponse;
-import com.prnapps.javautils.imgur.api.endpoints.AlbumEndPoint;
-import com.prnapps.javautils.imgur.api.endpoints.AlbumImagesEndPoint;
-import com.prnapps.javautils.imgur.api.endpoints.IEndPoint;
-import com.prnapps.javautils.imgur.api.endpoints.ImageEndPoint;
+import com.prnapps.javautils.imgur.api.endpoints.AlbumRequest;
+import com.prnapps.javautils.imgur.api.endpoints.AlbumImagesRequest;
+import com.prnapps.javautils.imgur.api.endpoints.IRequest;
+import com.prnapps.javautils.imgur.api.endpoints.ImageRequest;
 import com.prnapps.javautils.imgur.domain.Album;
 import com.prnapps.javautils.imgur.domain.Image;
 import com.prnapps.javautils.imgur.domain.BasicResponse;
@@ -35,35 +35,37 @@ public class ApiGateway {
     }
 
     public Image image(String imageId) throws IOException, HttpException {
-        ImageEndPoint request = new ImageEndPoint(imageId);
+        ImageRequest request = new ImageRequest(userAgent, clientId).setImageId(imageId);
         Type type = new TypeToken<BasicResponse<Image>>(){}.getType();
         BasicResponse<Image> response = getResponse(request, type);
         return response.getData();
     }
 
     public Album album(String albumId) throws IOException, HttpException {
-        AlbumEndPoint request = new AlbumEndPoint(albumId);
+        AlbumRequest request = new AlbumRequest(userAgent, clientId).setAlbumId(albumId);
         Type type = new TypeToken<BasicResponse<Album>>(){}.getType();
         BasicResponse<Album> response = getResponse(request, type);
         return response.getData();
     }
 
     public List<Image> albumImages(String albumId) throws IOException, HttpException {
-        AlbumImagesEndPoint request = new AlbumImagesEndPoint(albumId);
+        AlbumImagesRequest request = new AlbumImagesRequest(userAgent, clientId).setAlbumId(albumId);
         Type type = new TypeToken<BasicResponse<List<Image>>>(){}.getType();
         BasicResponse<List<Image>> response = getResponse(request, type);
         return response.getData();
     }
 
     public Image albumImage(String albumId, String imageId) throws IOException, HttpException {
-        AlbumImagesEndPoint request = new AlbumImagesEndPoint(albumId).setImageId(imageId);
+        AlbumImagesRequest request = new AlbumImagesRequest(userAgent, clientId)
+                .setAlbumId(albumId)
+                .setImageId(imageId);
         Type type = new TypeToken<BasicResponse<Image>>(){}.getType();
         BasicResponse<Image> response = getResponse(request, type);
         return response.getData();
     }
 
-    public BasicResponse getResponse(IEndPoint request, Type dataType) throws IOException, HttpException {
-        HttpResponse response = request.request(userAgent, clientId);
+    public BasicResponse getResponse(IRequest request, Type dataType) throws IOException, HttpException {
+        HttpResponse response = request.request();
         Gson gson = new GsonBuilder()
                 .excludeFieldsWithoutExposeAnnotation()
                 .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)

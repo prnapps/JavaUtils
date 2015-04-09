@@ -8,6 +8,6 @@ import java.io.IOException;
 /**
  * Created by jimbo on 3/20/2015.
  */
-public interface IEndPoint {
-    public HttpResponse request(String userAgent) throws HttpException, IOException;
+public interface IRequest {
+    public HttpResponse request() throws HttpException, IOException;
 }

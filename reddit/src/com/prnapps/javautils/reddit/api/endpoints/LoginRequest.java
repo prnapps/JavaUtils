@@ -7,20 +7,20 @@ import java.io.IOException;
 /**
  * Created by jimbo on 3/20/2015.
  */
-public class LoginEndPoint implements IEndPoint {
+public class LoginRequest implements IRequest {
     private final String LOGIN_URL = "http://www.reddit.com/listing/login";
     private final String LOGIN_CONTENT_FORMAT = "api_type=json&user=%s&passwd=%s&rem=true";
 
-    private final String username;
-    private final String password;
+    private final String userAgent;
+    private String username;
+    private String password;
 
-    public LoginEndPoint(String username, String password) {
-        this.username = username;
-        this.password = password;
+    public LoginRequest(String userAgent) {
+        this.userAgent = userAgent;
     }
 
     @Override
-    public HttpResponse request(String userAgent) throws IOException, HttpException {
+    public HttpResponse request() throws IOException, HttpException {
         HttpBuilder connection = new HttpBuilder()
                 .setUrl(LOGIN_URL)
                 .setMethod(HttpMethod.POST)
@@ -32,6 +32,14 @@ public class LoginEndPoint implements IEndPoint {
 
     public String getUsername() {
         return username;
+    }
+    public LoginRequest setUsername(String username) {
+        this.username = username;
+        return this;
+    }
+    public LoginRequest setPassword(String password) {
+        this.password = password;
+        return this;
     }
 
 }

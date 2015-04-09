@@ -1,6 +1,8 @@
 package com.prnapps.javautils.reddit.api.endpoints;
 
 import com.prnapps.javautils.http.*;
+import com.prnapps.javautils.reddit.domain.other.Order;
+import com.prnapps.javautils.reddit.domain.other.Period;
 import com.prnapps.javautils.utils.NameValuePair;
 import com.prnapps.javautils.utils.StringUtils;
 
@@ -12,7 +14,7 @@ import java.util.List;
 /**
  * Created by jimbo on 3/24/2015.
  */
-public class SubredditEndPoint implements IEndPoint {
+public class SubredditRequest implements IRequest {
     private final String URL_FORMAT = "http://reddit.com/r/%s/%s.json%s";
     private final String URL_QUERY_BEFORE = "before";
     private final String URL_QUERY_AFTER = "after";
@@ -21,7 +23,8 @@ public class SubredditEndPoint implements IEndPoint {
     private final String URL_QUERY_SHOW = "show";
     private final String URL_QUERY_PERIOD = "t";
 
-    private final String subredditName;
+    private final String userAgent;
+    private String subredditName;
 
     // params
     private Order subredditOrder = Order.HOT;
@@ -30,16 +33,16 @@ public class SubredditEndPoint implements IEndPoint {
     private String limit;
     private String count;
     private String show;
-    private String period;
+    private Period period;
 
-    public SubredditEndPoint(String subredditName) {
-        this.subredditName = subredditName;
+    public SubredditRequest(String userAgent) {
+        this.userAgent = userAgent;
     }
 
     @Override
-    public HttpResponse request(String userAgent) throws HttpException, IOException {
+    public HttpResponse request() throws HttpException, IOException {
         HttpBuilder connection = new HttpBuilder()
-                .setUrl(String.format(URL_FORMAT, subredditName, subredditOrder.toString(), generateParams()))
+                .setUrl(String.format(URL_FORMAT, subredditName, subredditOrder, generateParams()))
                 .setMethod(HttpMethod.GET)
                 .setAcceptType(HttpContent.JSON)
                 .setUserAgent(userAgent);
@@ -78,101 +81,58 @@ public class SubredditEndPoint implements IEndPoint {
     public String getSubredditName() {
         return subredditName;
     }
+    public SubredditRequest setSubredditName(String subredditName) {
+        this.subredditName = subredditName;
+        return this;
+    }
     public Order getSubredditOrder() {
         return subredditOrder;
     }
-    public SubredditEndPoint setSubredditOrder(Order subredditOrder) {
+    public SubredditRequest setSubredditOrder(Order subredditOrder) {
         this.subredditOrder = subredditOrder;
         return this;
-    }
-    public SubredditEndPoint setSubredditOrder(String subredditOrder) {
-        if(Order.NEW.toString().equalsIgnoreCase(subredditOrder)) {
-            return setSubredditOrder(Order.NEW);
-        } else if(Order.TOP.toString().equalsIgnoreCase(subredditOrder)) {
-            return setSubredditOrder(Order.TOP);
-        } else if(Order.CONTROVERSIAL.toString().equalsIgnoreCase(subredditOrder)) {
-            return setSubredditOrder(Order.CONTROVERSIAL);
-        }
-        return setSubredditOrder(Order.HOT);
     }
     public String getBefore() {
         return before;
     }
-    public SubredditEndPoint setBefore(String before) {
+    public SubredditRequest setBefore(String before) {
         this.before = before;
         return this;
     }
     public String getAfter() {
         return after;
     }
-    public SubredditEndPoint setAfter(String after) {
+    public SubredditRequest setAfter(String after) {
         this.after = after;
         return this;
     }
     public String getLimit() {
         return limit;
     }
-    public SubredditEndPoint setLimit(String limit) {
+    public SubredditRequest setLimit(String limit) {
         this.limit = limit;
         return this;
     }
     public String getCount() {
         return count;
     }
-    public SubredditEndPoint setCount(String count) {
+    public SubredditRequest setCount(String count) {
         this.count = count;
         return this;
     }
     public String getShow() {
         return show;
     }
-    public SubredditEndPoint setShow(String show) {
+    public SubredditRequest setShow(String show) {
         this.show = show;
         return this;
     }
-    public String getPeriod() {
+    public Period getPeriod() {
         return period;
     }
-    public SubredditEndPoint setPeriod(String period) {
+    public SubredditRequest setPeriod(Period period) {
         this.period = period;
         return this;
     }
 
-    public enum Order {
-        HOT("hot"),
-        NEW("new"),
-        TOP("top"),
-        CONTROVERSIAL("controversial");
-
-        private String string;
-
-        private Order(String string) {
-            this.string = string;
-        }
-
-        @Override
-        public String toString() {
-            return this.string;
-        }
-    }
-
-    public enum Period {
-        HOUR("hour"),
-        DAY("day"),
-        WEEK("week"),
-        MONTH("month"),
-        YEAR("year"),
-        ALL("all");
-
-        private String string;
-
-        private Period(String string) {
-            this.string = string;
-        }
-
-        @Override
-        public String toString() {
-            return this.string;
-        }
-    }
 }

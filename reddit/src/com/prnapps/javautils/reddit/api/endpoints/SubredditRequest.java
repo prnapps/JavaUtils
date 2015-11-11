@@ -1,6 +1,7 @@
 package com.prnapps.javautils.reddit.api.endpoints;
 
 import com.prnapps.javautils.http.*;
+import com.prnapps.javautils.reddit.api.endpoints.interfaces.IRequest;
 import com.prnapps.javautils.reddit.domain.other.Order;
 import com.prnapps.javautils.reddit.domain.other.Period;
 import com.prnapps.javautils.utils.NameValuePair;

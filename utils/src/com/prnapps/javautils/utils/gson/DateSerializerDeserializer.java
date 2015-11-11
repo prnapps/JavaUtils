@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * Created by jimbo on 3/19/2015.
  */
-public class DateSerializerDeserializer extends AbstractSerializerDeserializer<Date> {
+public class DateSerializerDeserializer implements ISerializerDeserializer<Date> {
     public static final String TIMESTAMP = "timestamp";
 
     private String dateFormat;

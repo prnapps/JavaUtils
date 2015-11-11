@@ -19,7 +19,7 @@ public class ApiGatewayTest extends TestCase {
     public void testLogin() {
         try {
             ApiGateway apiGateway = new ApiGateway(USER_AGENT);
-            Login login = apiGateway.getLogin((LoginRequest) new MockRequestManagerFactory().getMockLoginSavedManager());
+            Login login = apiGateway.getLogin(new MockRequestManagerFactory().getMockLoginSavedManager(), "test username");
             Assert.assertNotNull(login);
             Assert.assertEquals(login.getErrors().get(0).get(0), "WRONG_PASSWORD");
             Assert.assertEquals(login.getErrors().get(0).get(1), "invalid password");

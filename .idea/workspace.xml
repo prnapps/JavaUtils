@@ -10,7 +10,87 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e4ac395-8e6a-46b8-85a0-81f90354c876" name="Default" comment="" />
+    <list default="true" id="5e4ac395-8e6a-46b8-85a0-81f90354c876" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/AbstractSerializerDeserializer.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/http/com/prnapps/javautils/http/HttpBuilder.class" afterPath="$PROJECT_DIR$/out/production/http/com/prnapps/javautils/http/HttpBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/http/com/prnapps/javautils/http/HttpContent.class" afterPath="$PROJECT_DIR$/out/production/http/com/prnapps/javautils/http/HttpContent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/http/com/prnapps/javautils/http/HttpException.class" afterPath="$PROJECT_DIR$/out/production/http/com/prnapps/javautils/http/HttpException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/http/com/prnapps/javautils/http/HttpMethod.class" afterPath="$PROJECT_DIR$/out/production/http/com/prnapps/javautils/http/HttpMethod.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/http/com/prnapps/javautils/http/HttpResponse.class" afterPath="$PROJECT_DIR$/out/production/http/com/prnapps/javautils/http/HttpResponse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/api/ApiGateway$1.class" afterPath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/api/ApiGateway$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/api/ApiGateway$2.class" afterPath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/api/ApiGateway$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/api/ApiGateway$3.class" afterPath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/api/ApiGateway$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/api/ApiGateway$4.class" afterPath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/api/ApiGateway$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/api/ApiGateway.class" afterPath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/api/ApiGateway.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/domain/Album.class" afterPath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/domain/Album.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/domain/BasicResponse.class" afterPath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/domain/BasicResponse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/domain/Error.class" afterPath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/domain/Error.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/domain/Image.class" afterPath="$PROJECT_DIR$/out/production/imgur/com/prnapps/javautils/imgur/domain/Image.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/api/ApiGateway.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/api/ApiGateway.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/listing/Listing.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/listing/Listing.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/listing/ListingData.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/listing/ListingData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/login/Login.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/login/Login.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/login/LoginContainer.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/login/LoginContainer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/login/LoginData.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/login/LoginData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/other/Embed.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/other/Embed.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/other/FullName$SerializerDeserializer.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/other/FullName$SerializerDeserializer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/other/FullName.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/other/FullName.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/other/Media.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/other/Media.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/other/OEmbed.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/other/OEmbed.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Comment.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Comment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Link.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Link.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Subreddit.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Subreddit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Thing$1.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Thing$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Thing$SerializerDeserializer.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Thing$SerializerDeserializer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Thing.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/Thing.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/ThingData.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/ThingData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/ThingKind.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/ThingKind.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/User.class" afterPath="$PROJECT_DIR$/out/production/reddit/com/prnapps/javautils/reddit/domain/thing/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/utils/com/prnapps/javautils/utils/NameValuePair.class" afterPath="$PROJECT_DIR$/out/production/utils/com/prnapps/javautils/utils/NameValuePair.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/utils/com/prnapps/javautils/utils/StringUtils.class" afterPath="$PROJECT_DIR$/out/production/utils/com/prnapps/javautils/utils/StringUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/utils/com/prnapps/javautils/utils/gson/DateSerializerDeserializer.class" afterPath="$PROJECT_DIR$/out/production/utils/com/prnapps/javautils/utils/gson/DateSerializerDeserializer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/utils/com/prnapps/javautils/utils/gson/URLSerializerDeserializer.class" afterPath="$PROJECT_DIR$/out/production/utils/com/prnapps/javautils/utils/gson/URLSerializerDeserializer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/http/com/prnapps/javautils/http/HttpBuilderTest.class" afterPath="$PROJECT_DIR$/out/test/http/com/prnapps/javautils/http/HttpBuilderTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/api/ApiGatewayTest$1.class" afterPath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/api/ApiGatewayTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/api/ApiGatewayTest$2.class" afterPath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/api/ApiGatewayTest$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/api/ApiGatewayTest$3.class" afterPath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/api/ApiGatewayTest$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/api/ApiGatewayTest$4.class" afterPath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/api/ApiGatewayTest$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/api/ApiGatewayTest.class" afterPath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/api/ApiGatewayTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory$1.class" afterPath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory$2.class" afterPath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory$3.class" afterPath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory$4.class" afterPath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory.class" afterPath="$PROJECT_DIR$/out/test/imgur/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/api/ApiGatewayTest.class" afterPath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/api/ApiGatewayTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/domain/listing/ListingTest.class" afterPath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/domain/listing/ListingTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/domain/login/LoginTest.class" afterPath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/domain/login/LoginTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/domain/thing/CommentTest.class" afterPath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/domain/thing/CommentTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/domain/thing/LinkTest.class" afterPath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/domain/thing/LinkTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/domain/thing/UserTest.class" afterPath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/domain/thing/UserTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory$1.class" afterPath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory$2.class" afterPath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory$3.class" afterPath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory.class" afterPath="$PROJECT_DIR$/out/test/reddit/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/utils/com/prnapps/javautils/utils/NameValuePairTest.class" afterPath="$PROJECT_DIR$/out/test/utils/com/prnapps/javautils/utils/NameValuePairTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/utils/com/prnapps/javautils/utils/StringUtilsTest.class" afterPath="$PROJECT_DIR$/out/test/utils/com/prnapps/javautils/utils/StringUtilsTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/utils/com/prnapps/javautils/utils/gson/DateSerializerDeserializerTest.class" afterPath="$PROJECT_DIR$/out/test/utils/com/prnapps/javautils/utils/gson/DateSerializerDeserializerTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgur/test/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory.java" afterPath="$PROJECT_DIR$/imgur/test/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/ApiGateway.java" afterPath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/ApiGateway.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/LoginRequest.java" afterPath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/LoginRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/SavedRequest.java" afterPath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/SavedRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/SubredditRequest.java" afterPath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/SubredditRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/other/FullName.java" afterPath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/other/FullName.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/thing/Thing.java" afterPath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/thing/Thing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/api/ApiGatewayTest.java" afterPath="$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/api/ApiGatewayTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory.java" afterPath="$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/StringUtils.java" afterPath="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/StringUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/DateSerializerDeserializer.java" afterPath="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/DateSerializerDeserializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/URLSerializerDeserializer.java" afterPath="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/URLSerializerDeserializer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/IRequest.java" afterPath="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/interfaces/IRequest.java" />
+    </list>
     <ignored path="JavaUtils.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,15 +123,126 @@
     <favorites_list name="JavaUtils" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="ApiGatewayTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/api/ApiGatewayTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JUnit38ClassRunner.class" pinned="false" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/JUnit38ClassRunner.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.30583757">
+              <caret line="45" column="77" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="URLSerializerDeserializer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/URLSerializerDeserializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MockRequestManagerFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#390#934#0" expanded="true" />
+                <element signature="e#933#934#0" expanded="true" />
+                <element signature="e#1009#13119#0" expanded="true" />
+                <element signature="e#13118#13119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiGateway.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/ApiGateway.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gson.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/gson-2.3.1.jar!/com/google/gson/Gson.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.675">
+              <caret line="396" column="0" selection-start-line="396" selection-start-column="0" selection-end-line="396" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/src/com/prnapps/javautils/http/HttpResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#527#528#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GsonBuilder.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/gson-2.3.1.jar!/com/google/gson/GsonBuilder.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.0">
+              <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SavedRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/SavedRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/LoginRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -61,16 +252,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/connection/src/com/prnapps/javautils/connection/ConnectionMethod.java" />
-        <option value="$PROJECT_DIR$/connection/src/com/prnapps/javautils/connection/ConnectionResponse.java" />
-        <option value="$PROJECT_DIR$/connection/src/com/prnapps/javautils/http/ConnectionBuilder.java" />
-        <option value="$PROJECT_DIR$/connection/src/com/prnapps/javautils/http/ContentType.java" />
-        <option value="$PROJECT_DIR$/connection/src/com/prnapps/javautils/http/HttpBuilder.java" />
-        <option value="$PROJECT_DIR$/connection/src/com/prnapps/javautils/http/HttpException.java" />
-        <option value="$PROJECT_DIR$/http/test/com/prnapps/javautils/http/HttpBuilderTest.java" />
         <option value="$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/domain/AlbumResponse.java" />
-        <option value="$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory.java" />
-        <option value="$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/api/ApiGatewayTest.java" />
         <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/LoginRequestManager.java" />
         <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/SavedRequestManager.java" />
         <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/SubredditRequestManager.java" />
@@ -89,10 +271,8 @@
         <option value="$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/domain/ApiResponse.java" />
         <option value="$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/domain/ErrorResponse.java" />
         <option value="$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/domain/ImageResponse.java" />
-        <option value="$PROJECT_DIR$/imgur/test/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory.java" />
         <option value="$PROJECT_DIR$/imgur/test/com/prnapps/javautils/imgur/api/ApiGatewayTest.java" />
         <option value="$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/domain/BasicResponse.java" />
-        <option value="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/StringUtils.java" />
         <option value="$PROJECT_DIR$/http/src/com/prnapps/javautils/http/HttpContent.java" />
         <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/IRequestManager.java" />
         <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/IEndPoint.java" />
@@ -107,11 +287,22 @@
         <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/LoginEndPoint.java" />
         <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/SavedEndPoint.java" />
         <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/SubredditEndPoint.java" />
-        <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/ApiGateway.java" />
         <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/IEndPoint.java" />
         <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/IRequest.java" />
         <option value="$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/api/endpoints/IEndPoint.java" />
         <option value="$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/api/endpoints/IRequest.java" />
+        <option value="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/StringUtils.java" />
+        <option value="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/ISerializerDeserializer.java" />
+        <option value="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/DateSerializerDeserializer.java" />
+        <option value="$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/URLSerializerDeserializer.java" />
+        <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/other/FullName.java" />
+        <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/thing/Thing.java" />
+        <option value="$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory.java" />
+        <option value="$PROJECT_DIR$/imgur/test/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory.java" />
+        <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/LoginRequest.java" />
+        <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/interfaces/ILoginRequest.java" />
+        <option value="$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/ApiGateway.java" />
+        <option value="$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/api/ApiGatewayTest.java" />
       </list>
     </option>
   </component>
@@ -129,14 +320,11 @@
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="886" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -201,6 +389,8 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="ProjectPane">
@@ -235,7 +425,191 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="reddit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reddit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reddit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reddit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reddit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reddit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reddit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -258,10 +632,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="reddit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,21 +701,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="imgur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaUtils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaUtils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imgur" />
+              <option name="myItemId" value="reddit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -353,55 +709,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="imgur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaUtils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaUtils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imgur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imgur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaUtils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaUtils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imgur" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imgur" />
+              <option name="myItemId" value="reddit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -410,6 +718,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="endpoints" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interfaces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -439,7 +751,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../downloader" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/utils/src/com/prnapps/javautils" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -462,9 +774,6 @@
       <recent name="com.prnapps.javautils.newreddit.domain.login" />
       <recent name="com.prnapps.javautils.newreddit.domain.thing" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jimbo\developer\jlrussell\JavaUtils\imgur\test\com\prnapps\javautils\imgur" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.prnapps.javautils.http" />
       <recent name="com.prnapps.javautils.newreddit.domain.thing" />
@@ -475,129 +784,28 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.prnapps.javautils" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jimbo\developer\jlrussell\JavaUtils\imgur\test\com\prnapps\javautils\imgur" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration default="false" name="ApiGatewayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ApiGatewayTest.testGetSaved">
+    <configuration default="false" name="ApiGatewayTest.testGetSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.prnapps.javautils.imgur.api.*" />
+          <option name="PATTERN" value="com.prnapps.javautils.reddit.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="imgur" />
+      <module name="reddit" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.prnapps.javautils.imgur.api" />
-      <option name="MAIN_CLASS_NAME" value="com.prnapps.javautils.imgur.api.ApiGatewayTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ApiGatewayTest.testAlbum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.prnapps.javautils.imgur.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="imgur" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.prnapps.javautils.imgur.api" />
-      <option name="MAIN_CLASS_NAME" value="com.prnapps.javautils.imgur.api.ApiGatewayTest" />
-      <option name="METHOD_NAME" value="testAlbum" />
+      <option name="PACKAGE_NAME" value="com.prnapps.javautils.reddit.api" />
+      <option name="MAIN_CLASS_NAME" value="com.prnapps.javautils.reddit.api.ApiGatewayTest" />
+      <option name="METHOD_NAME" value="testGetSaved" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ApiGatewayTest.testAlbumImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.prnapps.javautils.imgur.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="imgur" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.prnapps.javautils.imgur.api" />
-      <option name="MAIN_CLASS_NAME" value="com.prnapps.javautils.imgur.api.ApiGatewayTest" />
-      <option name="METHOD_NAME" value="testAlbumImage" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ApiGatewayTest.testGetAlbumImageResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.prnapps.javautils.imgur.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="imgur" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.prnapps.javautils.imgur.api" />
-      <option name="MAIN_CLASS_NAME" value="com.prnapps.javautils.imgur.api.ApiGatewayTest" />
-      <option name="METHOD_NAME" value="testGetAlbumImageResponse" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ApiGatewayTest.testGetAlbumResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.prnapps.javautils.imgur.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="imgur" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.prnapps.javautils.imgur.api" />
-      <option name="MAIN_CLASS_NAME" value="com.prnapps.javautils.imgur.api.ApiGatewayTest" />
-      <option name="METHOD_NAME" value="testGetAlbumResponse" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -625,6 +833,15 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -646,6 +863,15 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -672,74 +898,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -756,17 +914,28 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
+    <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -793,12 +962,32 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="JavaUtils" />
       <envs />
       <method />
     </configuration>
@@ -830,22 +1019,64 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ApiGatewayTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ApiGatewayTest.testAlbum" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ApiGatewayTest.testAlbumImage" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ApiGatewayTest.testGetAlbumImageResponse" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ApiGatewayTest.testGetAlbumResponse" />
+    <configuration default="false" name="All Tests" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.prnapps.javautils" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All Tests" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ApiGatewayTest.testGetSaved" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ApiGatewayTest.testGetSaved" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -891,40 +1122,54 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="All_Tests - 2015.11.11 at 09h 17m 25s.xml">
+      <configuration name="All Tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_Tests - 2015.11.11 at 10h 02m 42s.xml">
+      <configuration name="All Tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApiGatewayTest_testGetSaved - 2015.11.11 at 10h 07m 08s.xml">
+      <configuration name="ApiGatewayTest.testGetSaved" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DateSerializerDeserializerTest_testDateformatDeserialize - 2015.11.10 at 15h 53m 18s.xml">
+      <configuration name="DateSerializerDeserializerTest.testDateformatDeserialize" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="174114000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
-    <editor active="false" />
+    <frame x="-11" y="-11" width="1942" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4774536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22557841" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271523" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40053052" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32716763" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47630057" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25782093" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32601157" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -939,7 +1184,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1010,8 +1257,20 @@
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/LoginRequest.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/api/ApiGatewayTest.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="68" />
+      <option name="time" value="71" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1020,55 +1279,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/URLSerializerDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23415978">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/domain/login/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/domain/thing/CommentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/domain/thing/LinkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/domain/thing/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/domain/listing/ListingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43655914">
-          <caret line="21" column="11853" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="11853" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/other/Embed.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16391185">
@@ -1090,27 +1300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/AbstractSerializerDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16391185">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/test/com/prnapps/javautils/utils/gson/DateSerializerDeserializerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39807162">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/DateSerializerDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30440772">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/test/com/prnapps/javautils/utils/NameValuePairTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3278237">
@@ -1125,13 +1314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/http/src/com/prnapps/javautils/http/HttpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60881543">
-          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/http/test/com/prnapps/javautils/http/HttpBuilderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09366391">
@@ -1142,20 +1324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16975749">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/api/ApiGatewayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25757575">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.046831954">
@@ -1163,31 +1331,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/thing/Thing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.041265473">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgur/test/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46831957">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/gson-2.3.1.jar!/com/google/gson/reflect/TypeToken.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3452211">
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/domain/BasicResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28099173">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1202,13 +1349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6322314">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30440772">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1240,28 +1380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/login/LoginData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28060523">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/login/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2517194">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/login/LoginContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18707015">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/thing/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16368638">
@@ -1283,13 +1401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/NameValuePair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33287483">
-          <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/listing/Listing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28060523">
@@ -1302,23 +1413,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgur/test/com/prnapps/javautils/imgur/api/ApiGatewayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9821183">
-          <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/api/endpoints/AlbumImagesRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39752406">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1336,40 +1430,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/SavedRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.303989">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="19" selection-end-column="35" />
-          <folding>
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="method#setLogin#0;class#SavedRequest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/api/endpoints/ImageRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16368638">
           <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-          <folding>
-            <element signature="method#setImageId#0;class#ImageRequest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/api/ApiGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29848692">
-          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/IRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1377,32 +1441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023383768">
           <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding>
-            <element signature="method#setSubredditName#0;class#SubredditRequest#0" expanded="false" />
-            <element signature="method#setSubredditOrder#0;class#SubredditRequest#0" expanded="false" />
-            <element signature="method#setBefore#0;class#SubredditRequest#0" expanded="false" />
-            <element signature="method#setAfter#0;class#SubredditRequest#0" expanded="false" />
-            <element signature="method#setLimit#0;class#SubredditRequest#0" expanded="false" />
-            <element signature="method#setCount#0;class#SubredditRequest#0" expanded="false" />
-            <element signature="method#setShow#0;class#SubredditRequest#0" expanded="false" />
-            <element signature="method#setPeriod#0;class#SubredditRequest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/ApiGateway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/LoginRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,6 +1448,230 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16368638">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="2854" column="18" selection-start-line="2854" selection-start-column="18" selection-end-line="2854" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/NameValuePair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/thing/Thing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6111111">
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/other/FullName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25">
+          <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/DateSerializerDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22826087">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/ISerializerDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/test/com/prnapps/javautils/utils/gson/DateSerializerDeserializerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/api/endpoints/AlbumImagesRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65217394">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/api/ApiGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02173913">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imgur/src/com/prnapps/javautils/imgur/domain/BasicResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39130434">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imgur/test/com/prnapps/javautils/imgur/mock/MockRequestManagerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22826087">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imgur/test/com/prnapps/javautils/imgur/api/ApiGatewayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75">
+          <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/interfaces/IRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/login/LoginData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18498169">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/login/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3827839">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/domain/login/LoginContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4065934">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/SavedRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/endpoints/LoginRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/com/prnapps/javautils/utils/gson/URLSerializerDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/mock/MockRequestManagerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#390#934#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <element signature="e#1009#13119#0" expanded="true" />
+            <element signature="e#13118#13119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/gson-2.3.1.jar!/com/google/gson/GsonBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/src/com/prnapps/javautils/http/HttpResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#527#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/gson-2.3.1.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.675">
+          <caret line="396" column="0" selection-start-line="396" selection-start-column="0" selection-end-line="396" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/src/com/prnapps/javautils/reddit/api/ApiGateway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit/test/com/prnapps/javautils/reddit/api/ApiGatewayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/JUnit38ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30583757">
+          <caret line="45" column="77" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
           <folding />
         </state>
       </provider>

@@ -1,6 +1,7 @@
 package com.prnapps.javautils.reddit.api.endpoints;
 
 import com.prnapps.javautils.http.*;
+import com.prnapps.javautils.reddit.api.endpoints.interfaces.IRequest;
 
 import java.io.IOException;
 
@@ -15,8 +16,10 @@ public class LoginRequest implements IRequest {
     private String username;
     private String password;
 
-    public LoginRequest(String userAgent) {
+    public LoginRequest(String userAgent, String username, String password) {
         this.userAgent = userAgent;
+        this.username = username;
+        this.password = password;
     }
 
     @Override
@@ -32,14 +35,6 @@ public class LoginRequest implements IRequest {
 
     public String getUsername() {
         return username;
-    }
-    public LoginRequest setUsername(String username) {
-        this.username = username;
-        return this;
-    }
-    public LoginRequest setPassword(String password) {
-        this.password = password;
-        return this;
     }
 
 }

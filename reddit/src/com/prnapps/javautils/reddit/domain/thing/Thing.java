@@ -2,7 +2,7 @@ package com.prnapps.javautils.reddit.domain.thing;
 
 import com.google.gson.*;
 import com.prnapps.javautils.reddit.domain.other.FullName;
-import com.prnapps.javautils.utils.gson.AbstractSerializerDeserializer;
+import com.prnapps.javautils.utils.gson.ISerializerDeserializer;
 
 import java.lang.reflect.Type;
 import java.util.List;
@@ -42,7 +42,7 @@ public class Thing {
         this.errors = errors;
     }
 
-    public static class SerializerDeserializer extends AbstractSerializerDeserializer<Thing> {
+    public static class SerializerDeserializer implements ISerializerDeserializer<Thing> {
         @Override
         public Thing deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
             try {

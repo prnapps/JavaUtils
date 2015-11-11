@@ -8,7 +8,7 @@ import java.net.URL;
 /**
  * Created by jimbo on 3/20/2015.
  */
-public class URLSerializerDeserializer extends AbstractSerializerDeserializer<URL> {
+public class URLSerializerDeserializer implements ISerializerDeserializer<URL> {
     @Override
     public URL deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
         try {

@@ -14,6 +14,11 @@ public class StringUtils {
         return str.isEmpty();
     }
 
+    public boolean isNullEmptyOrSpace(String str) {
+        if (str == null) return true;
+        return str.trim().isEmpty();
+    }
+
     public String combineStrings(String between, String... strings) {
         StringBuilder builder = new StringBuilder();
         for (String string : strings) {
@@ -30,7 +35,7 @@ public class StringUtils {
     }
 
     public String toTitleCase(String input) {
-        if(isNullOrEmpty(input)) {
+        if(isNullEmptyOrSpace(input)) {
             return input;
         }
         StringBuilder titleCase = new StringBuilder();

@@ -3,6 +3,7 @@ package com.prnapps.javautils.reddit.api.endpoints;
 import com.prnapps.javautils.http.HttpBuilder;
 import com.prnapps.javautils.http.HttpException;
 import com.prnapps.javautils.http.HttpResponse;
+import com.prnapps.javautils.reddit.api.endpoints.interfaces.IRequest;
 import com.prnapps.javautils.reddit.domain.login.Login;
 
 import java.io.IOException;

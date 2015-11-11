@@ -1,4 +1,4 @@
-package com.prnapps.javautils.reddit.api.endpoints;
+package com.prnapps.javautils.reddit.api.endpoints.interfaces;
 
 import com.prnapps.javautils.http.HttpException;
 import com.prnapps.javautils.http.HttpResponse;

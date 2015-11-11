@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/http/http.iml" filepath="$PROJECT_DIR$/http/http.iml" />
       <module fileurl="file://$PROJECT_DIR$/imgur/imgur.iml" filepath="$PROJECT_DIR$/imgur/imgur.iml" />
       <module fileurl="file://$PROJECT_DIR$/reddit/reddit.iml" filepath="$PROJECT_DIR$/reddit/reddit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sorts/sorts.iml" filepath="$PROJECT_DIR$/sorts/sorts.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
     </modules>
   </component>

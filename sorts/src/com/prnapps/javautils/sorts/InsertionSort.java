@@ -11,18 +11,23 @@ public abstract class InsertionSort<D> implements ISort<D> {
 
     @Override
     public List<D> sort(List<D> list) {
-        if(list == null){
+        if(list == null || list.size() < 2){
             return list;
         }
         for(int i = 1; i < list.size(); i++) {
             for(int j = i; j > 0; j--) {
-                if(compare(list.get(j-1), list.get(j)) == list.get(j)) {
-                    D temp = list.get(j);
-                    list.set(j, list.get(j-1));
-                    list.set(j-1, temp);
+                if(compare(list.get(j-1), list.get(j)) < 0) {
+                    list = swap(list, j-1, j);
                 }
             }
         }
+        return list;
+    }
+
+    protected List<D> swap(List<D> list, int index1, int index2) {
+        D temp = list.get(index1);
+        list.set(index1, list.get(index2));
+        list.set(index2, temp);
         return list;
     }
 }

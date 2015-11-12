@@ -7,5 +7,5 @@ import java.util.List;
  */
 public interface ISort<D> {
     List<D> sort(List<D> list);
-    D compare(D first, D second);
+    int compare(D first, D second);
 }

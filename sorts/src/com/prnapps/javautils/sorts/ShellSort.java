@@ -11,7 +11,7 @@ public abstract class ShellSort<D> implements ISort<D> {
 
     @Override
     public List<D> sort(List<D> list) {
-        if(list == null){
+        if(list == null || list.size() < 2){
             return list;
         }
         for(int increment = list.size()/2; increment > 0; increment /= 2) {
@@ -19,7 +19,7 @@ public abstract class ShellSort<D> implements ISort<D> {
                 D temp = list.get(i);
                 int j;
                 for(j = i; j >= increment; j -= increment) {
-                    if(compare(temp, list.get(j-increment)) == list.get(j-increment)) {
+                    if(compare(temp, list.get(j-increment)) < 0) {
                         list.set(j, list.get(j-increment));
                     } else {
                         break;

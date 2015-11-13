@@ -16,7 +16,7 @@ public abstract class HeapSort<D> implements ISort<D> {
         if(list == null || list.size() < 2){
             return list;
         }
-        total = list.size();
+        total = list.size() - 1;
         for(int i = total/2; i >= 0; i--) {
             list = heapify(list, i);
         }
@@ -39,10 +39,10 @@ public abstract class HeapSort<D> implements ISort<D> {
         int left = i * 2;
         int right = left + 1;
         int last = i;
-        if(left <= total && compare(list.get(left), list.get(last)) > 0) {
+        if(left <= total && compare(list.get(left), list.get(last)) < 0) {
             last = left;
         }
-        if(right <= total && compare(list.get(right), list.get(last)) > 0) {
+        if(right <= total && compare(list.get(right), list.get(last)) < 0) {
             last = right;
         }
         if(last != i) {

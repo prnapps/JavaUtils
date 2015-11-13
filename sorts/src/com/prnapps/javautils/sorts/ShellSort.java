@@ -19,7 +19,7 @@ public abstract class ShellSort<D> implements ISort<D> {
                 D temp = list.get(i);
                 int j;
                 for(j = i; j >= increment; j -= increment) {
-                    if(compare(temp, list.get(j-increment)) < 0) {
+                    if(compare(list.get(j-increment), temp) < 0) {
                         list.set(j, list.get(j-increment));
                     } else {
                         break;

@@ -33,12 +33,12 @@ public abstract class QuickSort<D> implements ISort<D> {
                 i++;
             }
             while(compare(pivot, list.get(j)) > 0) {
-                j++;
+                j--;
             }
             if(i <= j) {
                 list = swap(list, i, j);
                 i++;
-                j++;
+                j--;
             }
         }
         if(index1 < j) {

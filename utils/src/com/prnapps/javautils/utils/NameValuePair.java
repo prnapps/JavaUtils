@@ -1,6 +1,17 @@
 package com.prnapps.javautils.utils;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.*;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +22,28 @@ import java.util.List;
 public class NameValuePair {
     private String name;
     private Object value;
+
+    public NameValuePair(){}
+
+    public NameValuePair(String name, Object value) {
+        this.name = name;
+        this.value = value;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public NameValuePair setName(String name) {
+        this.name = name;
+        return this;
+    }
+    public Object getValue() {
+        return value;
+    }
+    public NameValuePair setValue(Object value) {
+        this.value = value;
+        return this;
+    }
 
     public String toString() {
         return name + ": " + value;
@@ -48,25 +81,21 @@ public class NameValuePair {
     }
 
     public static String toJson(NameValuePair...pairs) {
-        StringBuilder builder = new StringBuilder();
         StringUtils utils = new StringUtils();
         List<String> params = new ArrayList<>();
         for(NameValuePair pair : pairs) {
             params.add(pair.toJson());
         }
-        builder.append(utils.combineStrings(",\n", params.toArray(new String[params.size()])));
-        return builder.toString();
+        return utils.combineStrings(",\n", params);
     }
 
     public static String toXml(NameValuePair...pairs) {
-        StringBuilder builder = new StringBuilder();
         StringUtils utils = new StringUtils();
         List<String> params = new ArrayList<>();
         for(NameValuePair pair : pairs) {
             params.add(pair.toXml());
         }
-        builder.append(utils.combineStrings("\n", params.toArray(new String[params.size()])));
-        return builder.toString();
+        return utils.combineStrings(",\n", params);
     }
 
     public static String toUrlParams(NameValuePair...pairs) throws UnsupportedEncodingException {
@@ -79,23 +108,8 @@ public class NameValuePair {
         for(NameValuePair pair : pairs) {
             params.add(pair.toUrlParam());
         }
-        builder.append(utils.combineStrings("&", params.toArray(new String[params.size()])));
+        builder.append(utils.combineStrings("&", params));
         return builder.toString();
-    }
-
-    public String getName() {
-        return name;
-    }
-    public NameValuePair setName(String name) {
-        this.name = name;
-        return this;
-    }
-    public Object getValue() {
-        return value;
-    }
-    public NameValuePair setValue(Object value) {
-        this.value = value;
-        return this;
     }
 
 }

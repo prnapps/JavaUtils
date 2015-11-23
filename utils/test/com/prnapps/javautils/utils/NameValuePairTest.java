@@ -2,6 +2,8 @@ package com.prnapps.javautils.utils;
 
 import junit.framework.TestCase;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
 import java.io.UnsupportedEncodingException;
 
 /**
@@ -41,11 +43,19 @@ public class NameValuePairTest extends TestCase {
     }
 
     public void testToXml() {
-        assertEquals(pair1.toXml(), "<test_name>test value</test_name>");
-        assertEquals(pair2.toXml(), "<test_name>1</test_name>");
-        assertEquals(pair3.toXml(), "<test_name>true</test_name>");
-        assertEquals(pair4.toXml(), "<test_name />");
-        assertEquals(pair5.toXml(), "<test_name>3.1415</test_name>");
+        try {
+            assertEquals(pair1.toXml(), "<test_name>test value</test_name>");
+            assertEquals(pair2.toXml(), "<test_name>1</test_name>");
+            assertEquals(pair3.toXml(), "<test_name>true</test_name>");
+            assertEquals(pair4.toXml(), "<test_name />");
+            assertEquals(pair5.toXml(), "<test_name>3.1415</test_name>");
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+            assertTrue(false);
+        } catch (TransformerException e) {
+            e.printStackTrace();
+            assertTrue(false);
+        }
     }
 
     public void testToUrlParam() {
@@ -67,8 +77,16 @@ public class NameValuePairTest extends TestCase {
     }
 
     public void testListToXml() {
-        assertEquals(NameValuePair.toXml(pair1, pair2, pair3, pair4, pair5),
-                "<test_name>test value</test_name>\n<test_name>1</test_name>\n<test_name>true</test_name>\n<test_name />\n<test_name>3.1415</test_name>");
+        try {
+            assertEquals(NameValuePair.toXml(pair1, pair2, pair3, pair4, pair5),
+                    "<test_name>test value</test_name>\n<test_name>1</test_name>\n<test_name>true</test_name>\n<test_name />\n<test_name>3.1415</test_name>");
+        } catch (TransformerException e) {
+            e.printStackTrace();
+            assertTrue(false);
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+            assertTrue(false);
+        }
     }
 
     public void testListToUrlParam() {

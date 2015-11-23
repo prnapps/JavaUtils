@@ -19,6 +19,10 @@ public class StringUtils {
         return str.trim().isEmpty();
     }
 
+    public String combineStrings(String between, List<String> strings) {
+        return combineStrings(between, strings.toArray(new String[strings.size()]));
+    }
+
     public String combineStrings(String between, String... strings) {
         StringBuilder builder = new StringBuilder();
         for (String string : strings) {
